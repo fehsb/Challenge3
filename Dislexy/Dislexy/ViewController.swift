@@ -10,6 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var imgLogo: UIImageView!
+    
+    @IBOutlet weak var txtView: UITextView!
+   
+    @IBOutlet weak var pageControl: UIPageControl!
+    
+    @IBOutlet weak var backGroundImg: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
