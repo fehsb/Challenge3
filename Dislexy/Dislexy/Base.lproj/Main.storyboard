@@ -215,24 +215,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="94P-rF-nz7" secondAttribute="centerX" id="1Df-bu-wad"/>
-                            <constraint firstAttribute="centerY" secondItem="94P-rF-nz7" secondAttribute="centerY" constant="61" id="3C9-eJ-Qua"/>
-                            <constraint firstItem="IzF-o6-DpC" firstAttribute="top" secondItem="94P-rF-nz7" secondAttribute="bottom" constant="8" id="9TH-9E-Doh"/>
-                            <constraint firstAttribute="centerY" secondItem="jSF-NB-KGV" secondAttribute="centerY" constant="99" id="AFh-9Y-IPS"/>
-                            <constraint firstItem="YZL-ml-86g" firstAttribute="top" secondItem="r56-Ay-czk" secondAttribute="bottom" constant="51" id="B3Q-SO-zwP"/>
-                            <constraint firstAttribute="centerX" secondItem="Hfo-vc-etC" secondAttribute="centerX" constant="-0.5" id="HCV-98-iE5"/>
-                            <constraint firstAttribute="centerY" secondItem="Hfo-vc-etC" secondAttribute="centerY" constant="186.5" id="NfY-O5-CVp"/>
-                            <constraint firstAttribute="centerX" secondItem="jSF-NB-KGV" secondAttribute="centerX" id="QYr-F2-TiI"/>
-                            <constraint firstItem="94P-rF-nz7" firstAttribute="top" secondItem="jSF-NB-KGV" secondAttribute="bottom" constant="8" id="Yai-J9-qWE"/>
-                            <constraint firstAttribute="centerX" secondItem="IzF-o6-DpC" secondAttribute="centerX" id="akE-D9-k4R"/>
-                            <constraint firstItem="r56-Ay-czk" firstAttribute="top" secondItem="IzF-o6-DpC" secondAttribute="bottom" constant="8" id="gm1-Z8-k8M"/>
-                            <constraint firstAttribute="centerX" secondItem="r56-Ay-czk" secondAttribute="centerX" id="kPV-sj-IvU"/>
-                            <constraint firstAttribute="centerY" secondItem="IzF-o6-DpC" secondAttribute="centerY" constant="23" id="m2G-Tl-zZx"/>
-                            <constraint firstAttribute="centerX" secondItem="YZL-ml-86g" secondAttribute="centerX" id="oQm-jY-RKK"/>
-                            <constraint firstItem="Hfo-vc-etC" firstAttribute="top" secondItem="KDi-Oi-H0k" secondAttribute="bottom" constant="83" id="oWP-Ke-kuK"/>
-                            <constraint firstItem="jSF-NB-KGV" firstAttribute="top" secondItem="Hfo-vc-etC" secondAttribute="bottom" constant="62" id="tSI-wl-kkW"/>
-                            <constraint firstAttribute="centerY" secondItem="r56-Ay-czk" secondAttribute="centerY" constant="-15" id="tf3-1V-mB0"/>
-                            <constraint firstAttribute="centerY" secondItem="YZL-ml-86g" secondAttribute="centerY" constant="-111" id="zJP-SX-3HZ"/>
+                            <constraint firstItem="5A8-IV-Mtv" firstAttribute="top" secondItem="DqL-yo-KD4" secondAttribute="topMargin" id="OdZ-vJ-6Wg"/>
+                            <constraint firstItem="hxb-9t-jd6" firstAttribute="top" secondItem="5A8-IV-Mtv" secondAttribute="bottom" id="mGr-qO-mu4"/>
+                            <constraint firstItem="5A8-IV-Mtv" firstAttribute="leading" secondItem="DqL-yo-KD4" secondAttribute="leadingMargin" constant="-16" id="rMe-U3-Yu1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5A8-IV-Mtv" secondAttribute="trailing" constant="-16" id="v0E-bD-1xN"/>
                         </constraints>
                     </view>
                     <connections>
