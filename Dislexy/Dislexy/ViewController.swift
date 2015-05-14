@@ -18,16 +18,45 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var backGroundImg: UIImageView!
     
+        
+    @IBOutlet weak var viewInvisivel: UIView!
+        
+    let texto = ["bla bla bla","ble ble ble","bli bli bli"]
+        
+        
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+            
+        txtView.text = texto[pageControl.currentPage]
+            
+            
+            
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
+        
+    @IBAction func swipeDireita(sender: AnyObject) {
+            
+        if(pageControl.currentPage < 2){
+                pageControl.currentPage++
+            }
+            update()
+            
     }
-
-
+    
+    
+    @IBAction func swipeEsquerda(sender: AnyObject) {
+        
+        if(pageControl.currentPage > 0){
+            pageControl.currentPage--
+        }
+        update()
+        
+    }
+    
+    
+    func update(){
+        txtView.text = texto[pageControl.currentPage]
+    }
 }
+
 
