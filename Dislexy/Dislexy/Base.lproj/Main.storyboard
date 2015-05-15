@@ -142,6 +142,7 @@
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="617" y="587"/>
         </scene>
         <!--Exercicio1 View Controller-->
         <scene sceneID="0oO-0x-0Cx">
