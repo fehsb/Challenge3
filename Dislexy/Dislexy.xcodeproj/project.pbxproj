@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CA07BBB71B05197200AE41E4 /* Exercicio1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA07BBB61B05197200AE41E4 /* Exercicio1ViewController.swift */; };
 		D401B8E01B05136B0021782F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D401B8DF1B05136B0021782F /* AppDelegate.swift */; };
 		D401B8E31B05136B0021782F /* Dislexy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D401B8E11B05136B0021782F /* Dislexy.xcdatamodeld */; };
 		D401B8E51B05136B0021782F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D401B8E41B05136B0021782F /* ViewController.swift */; };
@@ -15,6 +14,8 @@
 		D401B8EA1B05136B0021782F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D401B8E91B05136B0021782F /* Images.xcassets */; };
 		D401B8ED1B05136B0021782F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D401B8EB1B05136B0021782F /* LaunchScreen.xib */; };
 		D401B8F91B05136B0021782F /* DislexyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D401B8F81B05136B0021782F /* DislexyTests.swift */; };
+		D47EA00D1B066B4B00A6B08A /* Exercicio1TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47EA00C1B066B4B00A6B08A /* Exercicio1TableViewController.swift */; };
+		D4C28AAC1B06B9880026DBBD /* SCLAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C28AAB1B06B9880026DBBD /* SCLAlertView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +29,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CA07BBB61B05197200AE41E4 /* Exercicio1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Exercicio1ViewController.swift; path = ../Exercicio1ViewController.swift; sourceTree = "<group>"; };
 		D401B8DA1B05136B0021782F /* Dislexy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dislexy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D401B8DE1B05136B0021782F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D401B8DF1B05136B0021782F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +40,8 @@
 		D401B8F21B05136B0021782F /* DislexyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DislexyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D401B8F71B05136B0021782F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D401B8F81B05136B0021782F /* DislexyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DislexyTests.swift; sourceTree = "<group>"; };
+		D47EA00C1B066B4B00A6B08A /* Exercicio1TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercicio1TableViewController.swift; sourceTree = "<group>"; };
+		D4C28AAB1B06B9880026DBBD /* SCLAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCLAlertView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +85,8 @@
 			children = (
 				D401B8DF1B05136B0021782F /* AppDelegate.swift */,
 				D401B8E41B05136B0021782F /* ViewController.swift */,
-				CA07BBB61B05197200AE41E4 /* Exercicio1ViewController.swift */,
+				D47EA00C1B066B4B00A6B08A /* Exercicio1TableViewController.swift */,
+				D4C28AAB1B06B9880026DBBD /* SCLAlertView.swift */,
 				D401B8E61B05136B0021782F /* Main.storyboard */,
 				D401B8E91B05136B0021782F /* Images.xcassets */,
 				D401B8EB1B05136B0021782F /* LaunchScreen.xib */,
@@ -218,8 +221,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA07BBB71B05197200AE41E4 /* Exercicio1ViewController.swift in Sources */,
 				D401B8E51B05136B0021782F /* ViewController.swift in Sources */,
+				D47EA00D1B066B4B00A6B08A /* Exercicio1TableViewController.swift in Sources */,
+				D4C28AAC1B06B9880026DBBD /* SCLAlertView.swift in Sources */,
 				D401B8E31B05136B0021782F /* Dislexy.xcdatamodeld in Sources */,
 				D401B8E01B05136B0021782F /* AppDelegate.swift in Sources */,
 			);

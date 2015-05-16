@@ -23,7 +23,6 @@ class ViewController: UIViewController {
     
     let texto = ["bla bla bla","ble ble ble","bli bli bli"]
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
