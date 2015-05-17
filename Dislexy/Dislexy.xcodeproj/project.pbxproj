@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA108E2D1B08E73B0068B949 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA108E2C1B08E73B0068B949 /* DesignableView.swift */; };
 		D401B8E01B05136B0021782F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D401B8DF1B05136B0021782F /* AppDelegate.swift */; };
 		D401B8E31B05136B0021782F /* Dislexy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D401B8E11B05136B0021782F /* Dislexy.xcdatamodeld */; };
 		D401B8E51B05136B0021782F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D401B8E41B05136B0021782F /* ViewController.swift */; };
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CA108E2C1B08E73B0068B949 /* DesignableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
 		D401B8DA1B05136B0021782F /* Dislexy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dislexy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D401B8DE1B05136B0021782F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D401B8DF1B05136B0021782F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				D401B8DE1B05136B0021782F /* Info.plist */,
+				CA108E2C1B08E73B0068B949 /* DesignableView.swift */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 			files = (
 				D401B8E51B05136B0021782F /* ViewController.swift in Sources */,
 				D47EA00D1B066B4B00A6B08A /* Exercicio1TableViewController.swift in Sources */,
+				CA108E2D1B08E73B0068B949 /* DesignableView.swift in Sources */,
 				D4C28AAC1B06B9880026DBBD /* SCLAlertView.swift in Sources */,
 				D401B8E31B05136B0021782F /* Dislexy.xcdatamodeld in Sources */,
 				D401B8E01B05136B0021782F /* AppDelegate.swift in Sources */,
