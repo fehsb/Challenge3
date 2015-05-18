@@ -3,11 +3,12 @@
     {
       "idiom" : "universal",
       "scale" : "1x",
-      "filename" : "proSangue.png"
+      "filename" : "fechar1x.png"
     },
     {
       "idiom" : "universal",
-      "scale" : "2x"
+      "scale" : "2x",
+      "filename" : "fechar2x.png"
     },
     {
       "idiom" : "universal",

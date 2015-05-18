@@ -51,19 +51,19 @@ class Exercicio1TableViewController: UITableViewController, UITextFieldDelegate 
         
         
         if(textField1.text == ""){
-            SCLAlertView().showNotice("Atenção", subTitle: "TODOS os campos devem ser preenchidos com palavras")
+            SCLAlertView().showNotice("ATENÇÃO", subTitle: "Todos os campos devem ser preenchidos com palavras.")
             return
         }
         if(textField2.text == ""){
-            SCLAlertView().showNotice("Atenção", subTitle: "TODOS os campos devem ser preenchidos com palavras")
+            SCLAlertView().showNotice("ATENÇÃO", subTitle: "Todos os campos devem ser preenchidos com palavras.")
             return
         }
         if(textField3.text == ""){
-            SCLAlertView().showNotice("Atenção", subTitle: "TODOS os campos devem ser preenchidos com palavras")
+            SCLAlertView().showNotice("ATENÇÃO", subTitle: "Todos os campos devem ser preenchidos com palavras.")
             return
         }
         if(textField4.text == ""){
-            SCLAlertView().showNotice("Atenção", subTitle: "TODOS os campos devem ser preenchidos com palavras")
+            SCLAlertView().showNotice("ATENÇÃO", subTitle: "Todos os campos devem ser preenchidos com palavras.")
             return
         }else{
        verificaAcerto()
@@ -121,21 +121,21 @@ class Exercicio1TableViewController: UITableViewController, UITextFieldDelegate 
     func iniciaJogo(){
         if jogadas == 3 {
         //chama o alerta com os resultados
-            var sucessTitle = "Fim de jogo"
+            var sucessTitle = "FIM"
             var subtitle = String()
             
             switch(acertos){
                 case 0:
-                    subtitle = "você não acertou NENHUMA rodada, continue treinando e chegará lá :)"
+                    subtitle = "Você não acertou nenhuma rodada. Continue treinando e chegará lá."
                 break
                 case 1:
-                    subtitle = "você conseguiu 1 acerto, continue treinando e chegará lá :)"
+                    subtitle = "Você conseguiu 1 acerto. Continue treinando e chegará lá."
                 break
                 case 2:
-                    subtitle = "MUITO BOM! Você conseguiu 2 acertos,continue treinando e chegará lá :)"
+                    subtitle = "Muito bom! Você conseguiu 2 acertos. Continue treinando e chegará lá."
                 break
                 case 3:
-                    subtitle = "PARABENS!!! você acertou todas as respostas,mas não esqueça a prática leva a perfeição"
+                    subtitle = "Parabéns! Você acertou tudo. Mas não se esqueça: a prática leva a perfeição."
                 break
             default:
                 subtitle = "error"
@@ -163,9 +163,11 @@ class Exercicio1TableViewController: UITableViewController, UITextFieldDelegate 
     
     func sair(){
         
-        let secondViewController:ViewController = self.storyboard!.instantiateViewControllerWithIdentifier("principal") as! ViewController
+//        let secondViewController:ViewController = self.storyboard!.instantiateViewControllerWithIdentifier("principal") as! ViewController
+//        
+//        self.presentViewController(secondViewController, animated: true, completion: nil)
         
-        self.presentViewController(secondViewController, animated: true, completion: nil)
+        navigationController?.presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
         
     }
     

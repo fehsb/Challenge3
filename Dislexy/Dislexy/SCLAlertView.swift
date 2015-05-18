@@ -334,7 +334,7 @@ public class SCLAlertView: UIViewController {
         // Icon style
         switch style {
         case .Success:
-            viewColor = UIColorFromRGB(0x22B573)
+            viewColor = UIColorFromRGB(0x18B57C)
             iconImage = SCLAlertViewStyleKit.imageOfCheckmark
 
         case .Error:
@@ -342,7 +342,7 @@ public class SCLAlertView: UIViewController {
             iconImage = SCLAlertViewStyleKit.imageOfCross
 
         case .Notice:
-            viewColor = UIColorFromRGB(0x727375)
+            viewColor = UIColorFromRGB(0xEE6265)
             iconImage = SCLAlertViewStyleKit.imageOfNotice
 
         case .Warning:
