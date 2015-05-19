@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>FCBEEF8E-CDD9-4690-92BF-87EE595F534A</string>
 	<key>IDESourceControlProjectName</key>
-	<string>Dislexy</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>0AA996397EDBA726A1C9E3CADFD1EFD5B53729B0</key>
 		<string>https://github.com/fehsb/Challenge3.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Dislexy/Dislexy.xcodeproj</string>
+	<string>Dislexy/Dislexy.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>0AA996397EDBA726A1C9E3CADFD1EFD5B53729B0</key>
