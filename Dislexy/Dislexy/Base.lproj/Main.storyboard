@@ -21,15 +21,12 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="362"/>
                                 <color key="backgroundColor" red="0.6705882353" green="0.67843137249999996" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="362" id="GOM-Kb-uWn"/>
-                                    <constraint firstAttribute="width" constant="600" id="tCZ-qg-Tug"/>
-                                </constraints>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="proSangue" translatesAutoresizingMaskIntoConstraints="NO" id="t70-QT-ujt">
-                                <rect key="frame" x="241" y="45" width="97" height="124"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="124" id="oy9-ez-d8L"/>
-                                    <constraint firstAttribute="width" constant="97" id="xxS-8O-ulV"/>
+                                    <constraint firstAttribute="height" constant="362" id="GOM-Kb-uWn">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="435"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="600" id="tCZ-qg-Tug">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="720"/>
+                                    </constraint>
                                 </constraints>
                             </imageView>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" currentPage="1" translatesAutoresizingMaskIntoConstraints="NO" id="9FF-oa-OAn">
@@ -54,7 +51,9 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="362"/>
                                 <gestureRecognizers/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="362" id="R8q-pE-2vN"/>
+                                    <constraint firstAttribute="height" constant="362" id="R8q-pE-2vN">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="435"/>
+                                    </constraint>
                                 </constraints>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="mw3-FS-Byh" appends="YES" id="dIP-XH-rwN"/>
@@ -166,12 +165,21 @@
                                     <segue destination="Llg-As-5UG" kind="presentation" id="c1o-ab-Cuz"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="proSangue" translatesAutoresizingMaskIntoConstraints="NO" id="t70-QT-ujt">
+                                <rect key="frame" x="241" y="45" width="97" height="124"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="124" id="oy9-ez-d8L"/>
+                                    <constraint firstAttribute="width" constant="97" id="xxS-8O-ulV"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="ccz-1q-Ho5" firstAttribute="top" secondItem="hPF-f0-86U" secondAttribute="bottom" constant="8" id="01Z-Mg-f05"/>
                             <constraint firstItem="hPF-f0-86U" firstAttribute="top" secondItem="Vn9-2f-3ua" secondAttribute="bottom" constant="8" id="0rU-xD-Tg5"/>
-                            <constraint firstItem="Xou-I5-MBA" firstAttribute="centerX" secondItem="bFg-q4-Tq2" secondAttribute="centerX" id="2Eb-i7-wPt"/>
+                            <constraint firstItem="Xou-I5-MBA" firstAttribute="centerX" secondItem="bFg-q4-Tq2" secondAttribute="centerX" id="2Eb-i7-wPt">
+                                <variation key="heightClass=regular-widthClass=compact" constant="43"/>
+                            </constraint>
                             <constraint firstAttribute="centerX" secondItem="Vn9-2f-3ua" secondAttribute="centerX" id="2F6-yS-OgU"/>
                             <constraint firstAttribute="centerY" secondItem="ccz-1q-Ho5" secondAttribute="centerY" constant="-250" id="2VR-zT-BaD">
                                 <variation key="heightClass=regular-widthClass=compact" constant="-350"/>
@@ -181,22 +189,36 @@
                             </constraint>
                             <constraint firstAttribute="trailingMargin" secondItem="hPF-f0-86U" secondAttribute="trailing" constant="2" id="66e-E2-yic"/>
                             <constraint firstItem="Vn9-2f-3ua" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="7Fd-vC-Q9m"/>
-                            <constraint firstItem="Xou-I5-MBA" firstAttribute="centerY" secondItem="bFg-q4-Tq2" secondAttribute="centerY" constant="85.5" id="8oa-Jd-76f"/>
-                            <constraint firstItem="t70-QT-ujt" firstAttribute="centerY" secondItem="bFg-q4-Tq2" secondAttribute="centerY" constant="-74" id="Bfc-zz-7tz"/>
+                            <constraint firstItem="Xou-I5-MBA" firstAttribute="centerY" secondItem="bFg-q4-Tq2" secondAttribute="centerY" constant="85.5" id="8oa-Jd-76f">
+                                <variation key="heightClass=regular-widthClass=compact" constant="126"/>
+                            </constraint>
+                            <constraint firstItem="t70-QT-ujt" firstAttribute="centerY" secondItem="bFg-q4-Tq2" secondAttribute="centerY" constant="-74" id="Bfc-zz-7tz">
+                                <variation key="heightClass=regular-widthClass=compact" constant="-57.5"/>
+                            </constraint>
                             <constraint firstItem="Vn9-2f-3ua" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="DGm-ID-dFf"/>
-                            <constraint firstItem="t70-QT-ujt" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="25" id="FND-Jo-LHO"/>
+                            <constraint firstItem="t70-QT-ujt" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="25" id="FND-Jo-LHO">
+                                <variation key="heightClass=regular-widthClass=compact" constant="64"/>
+                            </constraint>
                             <constraint firstItem="hPF-f0-86U" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="H3H-oU-IXp"/>
                             <constraint firstItem="hPF-f0-86U" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="Haq-3T-9IW">
                                 <variation key="heightClass=regular-widthClass=compact" constant="-2"/>
                             </constraint>
-                            <constraint firstItem="t70-QT-ujt" firstAttribute="centerX" secondItem="bFg-q4-Tq2" secondAttribute="centerX" constant="-10.5" id="Ibm-NA-S3z"/>
+                            <constraint firstItem="t70-QT-ujt" firstAttribute="centerX" secondItem="bFg-q4-Tq2" secondAttribute="centerX" constant="-10.5" id="Ibm-NA-S3z">
+                                <variation key="heightClass=regular-widthClass=compact" constant="42.5"/>
+                            </constraint>
                             <constraint firstItem="hPF-f0-86U" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="KRk-16-LjD"/>
-                            <constraint firstItem="bFg-q4-Tq2" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="N4w-OK-3Ku"/>
+                            <constraint firstItem="bFg-q4-Tq2" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="N4w-OK-3Ku">
+                                <variation key="heightClass=regular-widthClass=compact" constant="-14"/>
+                            </constraint>
                             <constraint firstAttribute="centerY" secondItem="ccz-1q-Ho5" secondAttribute="centerY" constant="-350" id="ODC-1c-eAG">
                                 <variation key="heightClass=regular-widthClass=compact" constant="-285"/>
                             </constraint>
-                            <constraint firstItem="Xou-I5-MBA" firstAttribute="top" secondItem="t70-QT-ujt" secondAttribute="bottom" constant="68" id="ODQ-rB-Dcr"/>
-                            <constraint firstItem="9FF-oa-OAn" firstAttribute="top" secondItem="bFg-q4-Tq2" secondAttribute="bottom" constant="-58" id="Pw6-5q-r77"/>
+                            <constraint firstItem="Xou-I5-MBA" firstAttribute="top" secondItem="t70-QT-ujt" secondAttribute="bottom" constant="68" id="ODQ-rB-Dcr">
+                                <variation key="heightClass=regular-widthClass=compact" constant="92"/>
+                            </constraint>
+                            <constraint firstItem="9FF-oa-OAn" firstAttribute="top" secondItem="bFg-q4-Tq2" secondAttribute="bottom" constant="-58" id="Pw6-5q-r77">
+                                <variation key="heightClass=regular-widthClass=compact" constant="-54"/>
+                            </constraint>
                             <constraint firstItem="ccz-1q-Ho5" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="Qgw-dj-7Wa"/>
                             <constraint firstItem="Vn9-2f-3ua" firstAttribute="top" secondItem="bFg-q4-Tq2" secondAttribute="bottom" constant="22" id="ShF-RT-G3f">
                                 <variation key="heightClass=regular-widthClass=compact" constant="222"/>
@@ -206,11 +228,13 @@
                             <constraint firstAttribute="centerX" secondItem="hPF-f0-86U" secondAttribute="centerX" id="aN9-be-bvz">
                                 <variation key="heightClass=regular-widthClass=compact" constant="1"/>
                             </constraint>
-                            <constraint firstAttribute="trailingMargin" secondItem="bFg-q4-Tq2" secondAttribute="trailing" constant="-16" id="cWr-ED-850"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bFg-q4-Tq2" secondAttribute="trailing" constant="-16" id="cWr-ED-850">
+                                <variation key="heightClass=regular-widthClass=compact" constant="-133"/>
+                            </constraint>
                             <constraint firstItem="hPF-f0-86U" firstAttribute="top" secondItem="Vn9-2f-3ua" secondAttribute="bottom" constant="8" id="cXS-wP-xyk"/>
                             <constraint firstAttribute="centerX" secondItem="Vn9-2f-3ua" secondAttribute="centerX" id="eyX-H6-Jp7"/>
                             <constraint firstItem="Vn9-2f-3ua" firstAttribute="top" secondItem="0gy-Rr-yxa" secondAttribute="bottom" constant="222" id="ezr-E7-gQy">
-                                <variation key="heightClass=regular-widthClass=compact" constant="157"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="98"/>
                             </constraint>
                             <constraint firstAttribute="centerX" secondItem="ccz-1q-Ho5" secondAttribute="centerX" id="fKp-kK-aUR"/>
                             <constraint firstAttribute="centerY" secondItem="hPF-f0-86U" secondAttribute="centerY" constant="-182" id="hDk-Go-Rxu">
@@ -221,16 +245,24 @@
                             </constraint>
                             <constraint firstItem="Vn9-2f-3ua" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="jbR-0S-pjd"/>
                             <constraint firstAttribute="centerX" secondItem="ccz-1q-Ho5" secondAttribute="centerX" id="l4X-bV-X2f"/>
-                            <constraint firstItem="bFg-q4-Tq2" firstAttribute="centerY" secondItem="9FF-oa-OAn" secondAttribute="centerY" constant="-141.5" id="lSp-ep-FNv"/>
-                            <constraint firstItem="bFg-q4-Tq2" firstAttribute="centerX" secondItem="9FF-oa-OAn" secondAttribute="centerX" constant="-0.5" id="lUc-KP-AI1"/>
-                            <constraint firstItem="0gy-Rr-yxa" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="liP-hA-ihq"/>
+                            <constraint firstItem="bFg-q4-Tq2" firstAttribute="centerY" secondItem="9FF-oa-OAn" secondAttribute="centerY" constant="-141.5" id="lSp-ep-FNv">
+                                <variation key="heightClass=regular-widthClass=compact" constant="-182"/>
+                            </constraint>
+                            <constraint firstItem="bFg-q4-Tq2" firstAttribute="centerX" secondItem="9FF-oa-OAn" secondAttribute="centerX" constant="-0.5" id="lUc-KP-AI1">
+                                <variation key="heightClass=regular-widthClass=compact" constant="-42.5"/>
+                            </constraint>
+                            <constraint firstItem="0gy-Rr-yxa" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="liP-hA-ihq">
+                                <variation key="heightClass=regular-widthClass=compact" constant="-14"/>
+                            </constraint>
                             <constraint firstItem="ccz-1q-Ho5" firstAttribute="top" secondItem="hPF-f0-86U" secondAttribute="bottom" constant="8" id="lof-qx-SkD"/>
                             <constraint firstItem="ccz-1q-Ho5" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="mFH-dC-rLJ"/>
                             <constraint firstItem="0gy-Rr-yxa" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="qG5-dl-tgq"/>
                             <constraint firstAttribute="centerY" secondItem="hPF-f0-86U" secondAttribute="centerY" constant="-282" id="qyh-45-OcF">
                                 <variation key="heightClass=regular-widthClass=compact" constant="-217"/>
                             </constraint>
-                            <constraint firstItem="bFg-q4-Tq2" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="r7e-Dd-1v4"/>
+                            <constraint firstItem="bFg-q4-Tq2" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="r7e-Dd-1v4">
+                                <variation key="heightClass=regular-widthClass=compact" constant="-219"/>
+                            </constraint>
                             <constraint firstItem="ccz-1q-Ho5" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="tn6-ex-zCI"/>
                             <constraint firstItem="ccz-1q-Ho5" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="vDc-9E-St3"/>
                             <constraint firstAttribute="trailingMargin" secondItem="0gy-Rr-yxa" secondAttribute="trailing" constant="-16" id="xqE-GQ-i8i"/>
@@ -322,7 +354,7 @@
                         <sections>
                             <tableViewSection id="0z4-uC-ChH">
                                 <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="200" id="Si5-M9-t8U">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="216" id="Si5-M9-t8U">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Si5-M9-t8U" id="sc4-7D-rfY">
@@ -370,10 +402,10 @@
                                                             <real key="value" value="25"/>
                                                         </userDefinedRuntimeAttribute>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                            <real key="value" value="0.0"/>
+                                                            <real key="value" value="2"/>
                                                         </userDefinedRuntimeAttribute>
                                                         <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                            <color key="value" red="0.094117647060000004" green="0.70980392160000005" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                 </textField>
@@ -406,7 +438,10 @@
                                                             <real key="value" value="25"/>
                                                         </userDefinedRuntimeAttribute>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                            <real key="value" value="0.0"/>
+                                                            <real key="value" value="2"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                            <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                 </textField>
@@ -439,10 +474,10 @@
                                                             <real key="value" value="25"/>
                                                         </userDefinedRuntimeAttribute>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                            <real key="value" value="0.0"/>
+                                                            <real key="value" value="2"/>
                                                         </userDefinedRuntimeAttribute>
                                                         <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                            <color key="value" red="0.1058823529" green="0.6705882353" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                 </textField>
@@ -475,10 +510,10 @@
                                                             <real key="value" value="25"/>
                                                         </userDefinedRuntimeAttribute>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                            <real key="value" value="0.0"/>
+                                                            <real key="value" value="2"/>
                                                         </userDefinedRuntimeAttribute>
                                                         <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                            <color key="value" red="0.1058823529" green="0.6705882353" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                 </textField>
@@ -491,7 +526,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="200" id="lxi-FE-4RY">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="417" id="lxi-FE-4RY">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lxi-FE-4RY" id="wuX-Qc-Fn1">
@@ -513,8 +548,12 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="centerX" secondItem="jDD-FT-l3y" secondAttribute="centerX" constant="2" id="ImF-YH-NK3"/>
-                                                <constraint firstItem="jDD-FT-l3y" firstAttribute="top" secondItem="wuX-Qc-Fn1" secondAttribute="topMargin" constant="20" id="d2a-xV-gWV"/>
-                                                <constraint firstAttribute="centerY" secondItem="jDD-FT-l3y" secondAttribute="centerY" constant="52" id="ojG-3z-rwC"/>
+                                                <constraint firstItem="jDD-FT-l3y" firstAttribute="top" secondItem="wuX-Qc-Fn1" secondAttribute="topMargin" constant="20" id="d2a-xV-gWV">
+                                                    <variation key="heightClass=regular-widthClass=compact" constant="46"/>
+                                                </constraint>
+                                                <constraint firstAttribute="centerY" secondItem="jDD-FT-l3y" secondAttribute="centerY" constant="52" id="ojG-3z-rwC">
+                                                    <variation key="heightClass=regular-widthClass=compact" constant="134.5"/>
+                                                </constraint>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
@@ -550,7 +589,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2172" y="587"/>
+            <point key="canvasLocation" x="2172" y="586.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="0aq-bG-6Q6">
@@ -577,7 +616,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="fechar1x" width="32" height="32"/>
+        <image name="fechar1x" width="22" height="22"/>
         <image name="photo-1420819725583-a94fb85c0704" width="4288" height="2848"/>
         <image name="proSangue" width="579" height="744"/>
         <image name="right_filled-100" width="32" height="32"/>

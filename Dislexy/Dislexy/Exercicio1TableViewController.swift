@@ -48,6 +48,8 @@ class Exercicio1TableViewController: UITableViewController, UITextFieldDelegate 
     
     @IBAction func btnOk(sender: AnyObject) {
         
+        resignTextFields()
+        
         
         
         if(textField1.text == ""){
@@ -67,6 +69,16 @@ class Exercicio1TableViewController: UITableViewController, UITextFieldDelegate 
             return
         }else{
        verificaAcerto()
+        }
+        
+       
+    }
+    
+    func resignTextFields() {
+        for t in [textField1, textField2, textField3, textField4] {
+            if t.isFirstResponder() {
+                t.resignFirstResponder()
+            }
         }
     }
     
