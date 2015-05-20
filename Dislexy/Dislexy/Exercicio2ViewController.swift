@@ -77,5 +77,19 @@ class Exercicio2ViewController: UIViewController {
         
     }
     
+    func sair(){
+        
+        //        let secondViewController:ViewController = self.storyboard!.instantiateViewControllerWithIdentifier("principal") as! ViewController
+        //
+        //        self.presentViewController(secondViewController, animated: true, completion: nil)
+        
+        navigationController?.presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
+        
+    }
+
+    
+    @IBAction func voltar(sender: AnyObject) {
+        sair()
+    }
     
 }
