@@ -31,13 +31,21 @@ class Exercicio1TableViewController: UITableViewController, UITextFieldDelegate 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let defaults = NSUserDefaults.standardUserDefaults()
+        var vez = defaults.valueForKey("ex1") as! Int
+        if (vez == 0){
+            
+            instruction()
+            defaults.setInteger(1, forKey: "ex1")
+            
+        }
+        
         textField1.delegate = self
         textField2.delegate = self
         textField3.delegate = self
         textField4.delegate = self
         
         iniciaJogo()
-        
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -127,6 +135,17 @@ class Exercicio1TableViewController: UITableViewController, UITextFieldDelegate 
 
     @IBAction func toque(sender: AnyObject) {
         self.view.endEditing(true)
+    }
+    
+    
+    func instruction(){
+        var subtitle = ""
+        var tempo = NSTimeInterval.infinity
+        
+        let alert = SCLAlertView()
+        
+        alert.showInfo("Instruções", subTitle: "Digite 4 palavras diferentes que comecem com a mesma letra da palavra apresentada", closeButtonTitle: "Ok", duration: tempo )
+
     }
     
 

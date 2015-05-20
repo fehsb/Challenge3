@@ -37,6 +37,15 @@ class Exercicio2ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        let defaults = NSUserDefaults.standardUserDefaults()
+        var vez = defaults.valueForKey("ex2") as! Int
+        if (vez == 0){
+            
+            instruction()
+            defaults.setInteger(1, forKey: "ex2")
+            
+        }
         
         rodaJogo()
     }
@@ -89,6 +98,16 @@ class Exercicio2ViewController: UIViewController {
         
 
         }
+    }
+    
+    func instruction(){
+        var subtitle = ""
+        var tempo = NSTimeInterval.infinity
+        
+        let alert = SCLAlertView()
+        
+        alert.showInfo("Instruções", subTitle: "Toque na palavra mais adequada ao campo vazio", closeButtonTitle: "Ok", duration: tempo )
+        
     }
     
     @IBAction func botao1(sender: AnyObject) {

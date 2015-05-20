@@ -25,6 +25,20 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    
+        let defaults = NSUserDefaults.standardUserDefaults()
+        if let x: AnyObject = defaults.valueForKey("ex1") {
+        
+        }else{
+            defaults.setInteger(0, forKey: "ex1")
+        }
+        
+        if let y: AnyObject = defaults.valueForKey("ex2") {
+            
+        }else{
+            defaults.setInteger(0, forKey: "ex2")
+        }
+
         
         txtView.text = texto[pageControl.currentPage]
         
