@@ -51,6 +51,7 @@ class Exercicio2ViewController: UIViewController {
         
         if (cont == certo.count){
             cont = 0
+            acertos = 3
             //Exibir alerta
             var sucessTitle = "FIM"
             var subtitle = String()
