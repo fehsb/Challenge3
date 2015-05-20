@@ -32,6 +32,9 @@ class Exercicio2ViewController: UIViewController {
     
     var cont:Int = 0
     
+    var acertos = 0
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -45,6 +48,27 @@ class Exercicio2ViewController: UIViewController {
     }
     
     func rodaJogo(){
+        
+        if (cont == certo.count){
+            cont = 0
+            //Exibir alerta
+            var sucessTitle = "FIM"
+            var subtitle = String()
+            
+            subtitle = "Você obteve \(acertos) acertos"
+            
+            let alert = SCLAlertView()
+            
+            alert.addButton("Jogar Novamente"){
+                self.acertos = 0
+                self.rodaJogo()
+            }
+            alert.addButton("Sair", target:self, selector:"sair")
+            
+            alert.showSuccess(sucessTitle, subTitle: subtitle)
+            
+
+        }else{
         
         txtView.text = frases[cont]
         
@@ -62,27 +86,33 @@ class Exercicio2ViewController: UIViewController {
             }
         }
         
-        cont++
+
+        }
     }
     
     @IBAction func botao1(sender: AnyObject) {
-        
+        var val = btn1.currentTitle
+        if ((val)==(certo[cont])){
+            acertos++
+        }
+        cont++
         rodaJogo()
     }
     
     
     @IBAction func botao2(sender: AnyObject) {
-        
+        var val = btn2.currentTitle
+        if ((val)==(certo[cont])){
+            acertos++
+        }
+        cont++
         rodaJogo()
         
     }
     
     func sair(){
         
-        //        let secondViewController:ViewController = self.storyboard!.instantiateViewControllerWithIdentifier("principal") as! ViewController
-        //
-        //        self.presentViewController(secondViewController, animated: true, completion: nil)
-        
+
         navigationController?.presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
         
     }
