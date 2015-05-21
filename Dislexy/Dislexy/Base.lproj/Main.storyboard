@@ -592,9 +592,9 @@
                         <viewControllerLayoutGuide type="bottom" id="oa0-sn-uUf"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8Sk-bV-0vP">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="1pM-PZ-dcA"/>
                 </viewController>
@@ -629,9 +629,10 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QQP-Wn-1uy" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="uLX-7l-CVe">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="uLX-7l-CVe">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.094117647060000004" green="0.70980392160000005" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
