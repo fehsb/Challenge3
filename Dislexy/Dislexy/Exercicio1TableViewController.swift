@@ -54,6 +54,18 @@ class Exercicio1TableViewController: UITableViewController, UITextFieldDelegate 
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
     
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "alertIsGone", name: "alertWillDisappear", object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "alertIsGone2", name: "back", object: nil)
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        NSNotificationCenter.defaultCenter().removeObserver(self)
+    }
+
+    
     @IBAction func btnOk(sender: AnyObject) {
         
         resignTextFields()
@@ -174,13 +186,12 @@ class Exercicio1TableViewController: UITableViewController, UITextFieldDelegate 
             }
             
             let alert = SCLAlertView()
+            acertos = 0
+            jogadas = 0
+            alert.addButton("Jogar Novamente", target: alert, selector: "hideView")
             
-            alert.addButton("Jogar Novamente"){
-                self.acertos = 0
-                self.iniciaJogo()
-            }
-            alert.addButton("Sair", target:self, selector:"sair")
-        
+            alert.addButton("Sair", target: alert, selector: "hideView2")
+            
             alert.showSuccess(sucessTitle, subTitle: subtitle)
             
         }else{
@@ -190,6 +201,15 @@ class Exercicio1TableViewController: UITableViewController, UITextFieldDelegate 
             letra.text = palav
             limpaCampos()
         }
+    }
+    
+    func alertIsGone() {
+        iniciaJogo()
+        acertos = 0
+    }
+    
+    func alertIsGone2() {
+        sair()
     }
     
     func sair(){

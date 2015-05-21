@@ -377,11 +377,15 @@ public class SCLAlertView: UIViewController {
                 kTextHeight = ht
             }
         }
-
-        // Done button
+        
         let txt = completeText != nil ? completeText! : "Ok"
+        if (style == (.Success)){
+        
+        }else{
+        // Done button
         addButton(txt, target:self, selector:Selector("hideView"))
-
+        }
+            
         // Alert view colour and images
         self.circleView.backgroundColor = viewColor
         self.circleIconImageView.image  = iconImage
@@ -420,10 +424,22 @@ public class SCLAlertView: UIViewController {
         UIView.animateWithDuration(0.2, animations: {
             self.view.alpha = 0
             }, completion: { finished in
+                NSNotificationCenter.defaultCenter().postNotificationName("alertWillDisappear", object: nil)
+                
                 self.view.removeFromSuperview()
         })
     }
 
+    public func hideView2() {
+        UIView.animateWithDuration(0.2, animations: {
+            self.view.alpha = 0
+            }, completion: { finished in
+                NSNotificationCenter.defaultCenter().postNotificationName("back", object: nil)
+                
+                self.view.removeFromSuperview()
+        })
+    }
+    
     // Helper function to convert from RGB to UIColor
     func UIColorFromRGB(rgbValue: UInt) -> UIColor {
         return UIColor(

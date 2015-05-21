@@ -50,6 +50,17 @@ class Exercicio2ViewController: UIViewController {
         rodaJogo()
     }
     
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "alertIsGone", name: "alertWillDisappear", object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "alertIsGone2", name: "back", object: nil)
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        NSNotificationCenter.defaultCenter().removeObserver(self)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         
@@ -65,15 +76,15 @@ class Exercicio2ViewController: UIViewController {
             var sucessTitle = "FIM"
             var subtitle = String()
             
-            subtitle = "Você obteve \(acertos) acertos"
+            subtitle = "Você obteve \(acertos)/6 acertos"
             
             let alert = SCLAlertView()
             
-            alert.addButton("Jogar Novamente"){
-                self.acertos = 0
-                self.rodaJogo()
-            }
-            alert.addButton("Sair", target:self, selector:"sair")
+            self.acertos = 0
+
+            alert.addButton("Jogar Novamente", target: alert, selector: "hideView")
+            
+            alert.addButton("Sair", target: alert, selector: "hideView2")
             
             alert.showSuccess(sucessTitle, subTitle: subtitle)
             
@@ -98,6 +109,15 @@ class Exercicio2ViewController: UIViewController {
         
 
         }
+    }
+    
+    func alertIsGone() {
+        rodaJogo()
+        acertos = 0
+    }
+    
+    func alertIsGone2() {
+        sair()
     }
     
     func instruction(){
