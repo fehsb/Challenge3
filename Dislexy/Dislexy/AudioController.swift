@@ -20,15 +20,15 @@ class AudioController {
       
       //2 load the file contents
       var loadError:NSError?
-    //  let player = AVAudioPlayer(contentsOfURL: soundURL, error: &loadError)
-     // assert(loadError == nil, "Load sound failed")
+      let player = AVAudioPlayer(contentsOfURL: soundURL, error: &loadError)
+      assert(loadError == nil, "Load sound failed")
       
       //3 prepare the play
-    //  player.numberOfLoops = 0
-     // player.prepareToPlay()
+      player.numberOfLoops = 0
+      player.prepareToPlay()
       
       //4 add to the audio dictionary
-      // audio[effect] = player
+       audio[effect] = player
     }
   }
   

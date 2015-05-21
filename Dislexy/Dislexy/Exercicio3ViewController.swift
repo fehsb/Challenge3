@@ -9,6 +9,7 @@
 import UIKit
 
 class Exercicio3ViewController: UIViewController {
+    
     private let controller:GameController
     
     required init(coder aDecoder: NSCoder) {
