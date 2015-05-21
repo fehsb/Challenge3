@@ -40,8 +40,8 @@
                                     <constraint firstAttribute="width" constant="720" id="tCZ-qg-Tug"/>
                                 </constraints>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0gy-Rr-yxa">
-                                <rect key="frame" x="0.0" y="-14" width="600" height="449"/>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0gy-Rr-yxa">
+                                <rect key="frame" x="0.0" y="-14" width="600" height="351"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="t70-QT-ujt">
                                         <rect key="frame" x="169" y="152" width="262" height="87"/>
@@ -60,6 +60,17 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Xou-I5-MBA">
+                                        <rect key="frame" x="180" y="247" width="240" height="59"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="240" id="HE3-cu-GkV"/>
+                                            <constraint firstAttribute="height" constant="59" id="gUK-Nu-Xtj"/>
+                                        </constraints>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure </string>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
                                 </subviews>
                                 <gestureRecognizers/>
                                 <constraints>
@@ -74,26 +85,6 @@
                                     <outletCollection property="gestureRecognizers" destination="EVo-xk-xB4" appends="YES" id="fcf-2c-jDq"/>
                                 </connections>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hPF-f0-86U" customClass="RFButton" customModule="Dislexy" customModuleProvider="target">
-                                <rect key="frame" x="16" y="587" width="566" height="60"/>
-                                <color key="backgroundColor" red="0.094117647060000004" green="0.70980392160000005" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="4CL-9y-T62"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Oduda-Bold" family="Oduda" pointSize="20"/>
-                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Exercício 2">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="30"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <segue destination="mgz-An-JGM" kind="presentation" id="R9u-3c-THY"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ccz-1q-Ho5" customClass="RFButton" customModule="Dislexy" customModuleProvider="target">
                                 <rect key="frame" x="16" y="655" width="568" height="60"/>
                                 <color key="backgroundColor" red="0.094117647060000004" green="0.70980392160000005" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -110,9 +101,12 @@
                                         <real key="value" value="30"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="QQP-Wn-1uy" kind="show" id="L0z-fm-ipb"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vn9-2f-3ua" customClass="RFButton" customModule="Dislexy" customModuleProvider="target">
-                                <rect key="frame" x="16" y="519" width="568" height="60"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vn9-2f-3ua" customClass="RFButton" customModule="Dislexy" customModuleProvider="target">
+                                <rect key="frame" x="15" y="443" width="568" height="60"/>
                                 <color key="backgroundColor" red="0.094117647060000004" green="0.70980392160000005" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="mhV-yj-pQe"/>
@@ -134,31 +128,38 @@
                                     <segue destination="Llg-As-5UG" kind="presentation" id="c1o-ab-Cuz"/>
                                 </connections>
                             </button>
-                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" currentPage="1" translatesAutoresizingMaskIntoConstraints="NO" id="9FF-oa-OAn">
-                                <rect key="frame" x="280" y="382" width="39" height="37"/>
+                            <pageControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" currentPage="1" translatesAutoresizingMaskIntoConstraints="NO" id="9FF-oa-OAn">
+                                <rect key="frame" x="280" y="311" width="39" height="37"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="39" id="QSZ-Rq-7uq"/>
                                     <constraint firstAttribute="height" constant="37" id="iLs-tg-MmL"/>
                                 </constraints>
                             </pageControl>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Xou-I5-MBA">
-                                <rect key="frame" x="180" y="315" width="240" height="59"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hPF-f0-86U" customClass="RFButton" customModule="Dislexy" customModuleProvider="target">
+                                <rect key="frame" x="15" y="511" width="566" height="60"/>
+                                <color key="backgroundColor" red="0.094117647060000004" green="0.70980392160000005" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="HE3-cu-GkV"/>
-                                    <constraint firstAttribute="height" constant="59" id="gUK-Nu-Xtj"/>
+                                    <constraint firstAttribute="height" constant="60" id="4CL-9y-T62"/>
                                 </constraints>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure </string>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                                <fontDescription key="fontDescription" name="Oduda-Bold" family="Oduda" pointSize="20"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Exercício 2">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="mgz-An-JGM" kind="presentation" id="R9u-3c-THY"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="Xou-I5-MBA" firstAttribute="centerX" secondItem="bFg-q4-Tq2" secondAttribute="centerX" constant="1" id="2Eb-i7-wPt"/>
                             <constraint firstAttribute="trailingMargin" secondItem="hPF-f0-86U" secondAttribute="trailing" constant="2" id="66e-E2-yic"/>
                             <constraint firstItem="Vn9-2f-3ua" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="7Fd-vC-Q9m"/>
-                            <constraint firstItem="Xou-I5-MBA" firstAttribute="centerY" secondItem="bFg-q4-Tq2" secondAttribute="centerY" constant="127" id="8oa-Jd-76f"/>
                             <constraint firstItem="hPF-f0-86U" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="KRk-16-LjD"/>
                             <constraint firstItem="bFg-q4-Tq2" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="N4w-OK-3Ku"/>
                             <constraint firstAttribute="centerY" secondItem="ccz-1q-Ho5" secondAttribute="centerY" constant="-285" id="ODC-1c-eAG"/>
@@ -582,6 +583,25 @@
             </objects>
             <point key="canvasLocation" x="2172" y="1329"/>
         </scene>
+        <!--Exercicio3 View Controller-->
+        <scene sceneID="gbH-DH-NMe">
+            <objects>
+                <viewController id="wcR-Ie-JMd" customClass="Exercicio3ViewController" customModule="Dislexy" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Akf-ZT-vyW"/>
+                        <viewControllerLayoutGuide type="bottom" id="oa0-sn-uUf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8Sk-bV-0vP">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="1pM-PZ-dcA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hij-tM-eMJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2172" y="2075"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="HJl-7M-xzk">
             <objects>
@@ -603,6 +623,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AOE-TY-PV4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1360" y="1329"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="s78-ML-Xcj">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QQP-Wn-1uy" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="uLX-7l-CVe">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="wcR-Ie-JMd" kind="relationship" relationship="rootViewController" id="Ryc-5a-X0g"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="psK-1V-BTH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1360" y="2075"/>
         </scene>
     </scenes>
     <resources>

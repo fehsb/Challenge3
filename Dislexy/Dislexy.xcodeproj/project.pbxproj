@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		CA108E2D1B08E73B0068B949 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA108E2C1B08E73B0068B949 /* DesignableView.swift */; };
-		CA60B1F91B0BA47C00733B2C /* Muller-ExtraBold-DEMO.otf in Resources */ = {isa = PBXBuildFile; fileRef = CA60B1F81B0BA47C00733B2C /* Muller-ExtraBold-DEMO.otf */; };
-		CA60B1FB1B0BAED800733B2C /* Muller-Thin-DEMO.otf in Resources */ = {isa = PBXBuildFile; fileRef = CA60B1FA1B0BAED800733B2C /* Muller-Thin-DEMO.otf */; };
 		CABC1CD01B0E6BC300725929 /* Oduda-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = CABC1CCF1B0E6BC300725929 /* Oduda-Bold.otf */; };
 		CAC0113A1B0BB81B0050155C /* Exercicio2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC011391B0BB81B0050155C /* Exercicio2ViewController.swift */; };
 		D401B8E01B05136B0021782F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D401B8DF1B05136B0021782F /* AppDelegate.swift */; };
@@ -66,8 +64,6 @@
 
 /* Begin PBXFileReference section */
 		CA108E2C1B08E73B0068B949 /* DesignableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
-		CA60B1F81B0BA47C00733B2C /* Muller-ExtraBold-DEMO.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Muller-ExtraBold-DEMO.otf"; sourceTree = "<group>"; };
-		CA60B1FA1B0BAED800733B2C /* Muller-Thin-DEMO.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Muller-Thin-DEMO.otf"; sourceTree = "<group>"; };
 		CABC1CCF1B0E6BC300725929 /* Oduda-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oduda-Bold.otf"; sourceTree = "<group>"; };
 		CAC011391B0BB81B0050155C /* Exercicio2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercicio2ViewController.swift; sourceTree = "<group>"; };
 		D401B8DA1B05136B0021782F /* Dislexy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dislexy.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -180,9 +176,7 @@
 				D4210A631B0E6A4B005A92CA /* Default.png */,
 				D4210A641B0E6A4B005A92CA /* Default@2x.png */,
 				D401B8DE1B05136B0021782F /* Info.plist */,
-				CA60B1F81B0BA47C00733B2C /* Muller-ExtraBold-DEMO.otf */,
 				CABC1CCF1B0E6BC300725929 /* Oduda-Bold.otf */,
-				CA60B1FA1B0BAED800733B2C /* Muller-Thin-DEMO.otf */,
 				CA108E2C1B08E73B0068B949 /* DesignableView.swift */,
 			);
 			name = "Supporting Files";
@@ -389,7 +383,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA60B1FB1B0BAED800733B2C /* Muller-Thin-DEMO.otf in Resources */,
 				D4210A7B1B0E6BE6005A92CA /* win.mp3 in Resources */,
 				D4210A7C1B0E6BE6005A92CA /* wrong.m4a in Resources */,
 				D4210A3F1B0E6897005A92CA /* level3.plist in Resources */,
@@ -398,8 +391,9 @@
 				D4210A6B1B0E6A4B005A92CA /* board@2x.jpg in Resources */,
 				D4210A761B0E6BCE005A92CA /* Comic_Andy.ttf in Resources */,
 				D401B8E81B05136B0021782F /* Main.storyboard in Resources */,
+				D4210A701B0E6A4B005A92CA /* particle.png in Resources */,
+				D4210A3E1B0E6897005A92CA /* level2.plist in Resources */,
 				CABC1CD01B0E6BC300725929 /* Oduda-Bold.otf in Resources */,
-				CA60B1F91B0BA47C00733B2C /* Muller-ExtraBold-DEMO.otf in Resources */,
 				D4210A6E1B0E6A4B005A92CA /* Default.png in Resources */,
 				D4210A6D1B0E6A4B005A92CA /* btn@2x.png in Resources */,
 				D4210A3D1B0E6897005A92CA /* level1.plist in Resources */,

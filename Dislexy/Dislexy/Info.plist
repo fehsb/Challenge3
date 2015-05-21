@@ -24,9 +24,7 @@
 	<true/>
 	<key>UIAppFonts</key>
 	<array>
-		<string>Muller-Thin-DEMO.otf</string>
 		<string>Oduda-Bold.otf</string>
-		<string>Muller-ExtraBold-DEMO.otf</string>
 	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
