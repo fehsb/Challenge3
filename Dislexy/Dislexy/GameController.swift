@@ -25,8 +25,8 @@ class GameController {
   }
   
   //stopwatch variables
-  private var secondsLeft: Int = 0
-  private var timer: NSTimer?
+  //private var secondsLeft: Int = 0
+  // private var timer: NSTimer?
   
   private var data = GameData()
   
@@ -75,7 +75,7 @@ class GameController {
     for (index, letter) in enumerate(anagram2) {
       if letter != " " {
         let target = TargetView(letter: letter, sideLength: tileSide)
-        target.center = CGPointMake(xOffset + CGFloat(index)*(tileSide + TileMargin), ScreenHeight/4)
+        target.center = CGPointMake(xOffset + CGFloat(index)*(tileSide + TileMargin) + 10, ScreenHeight/4)
         
         gameView.addSubview(target)
         targets.append(target)
@@ -90,7 +90,7 @@ class GameController {
       //3
       if letter != " " {
         let tile = TileView(letter: letter, sideLength: tileSide)
-        tile.center = CGPointMake(xOffset + CGFloat(index)*(tileSide + TileMargin), ScreenHeight/4*3)
+        tile.center = CGPointMake(xOffset + CGFloat(index)*(tileSide + TileMargin) + 10, ScreenHeight/4*3 - 30)
         
         tile.randomize()
         tile.dragDelegate = self
@@ -102,7 +102,7 @@ class GameController {
     }
     
     //start the timer
-    self.startStopwatch()
+  //  self.startStopwatch()
     
     hud.hintButton.enabled = true
     
@@ -139,6 +139,7 @@ class GameController {
   
   
   func checkForSuccess() {
+  
     for targetView in targets {
       //no success, bail out
       if !targetView.isMatched {
@@ -150,7 +151,7 @@ class GameController {
     hud.hintButton.enabled = false
     
     //stop the stopwatch
-    self.stopStopwatch()
+   // self.stopStopwatch()
     
     //the anagram is completed!
     audioController.playEffect(SoundWin)
@@ -180,27 +181,27 @@ class GameController {
     })
   }
 
-  func startStopwatch() {
-    //initialize the timer HUD
-    secondsLeft = level.timeToSolve
-    hud.stopwatch.setSeconds(secondsLeft)
-    
-    //schedule a new timer
-    timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector:"tick:", userInfo: nil, repeats: true)
-  }
-  
-  func stopStopwatch() {
-    timer?.invalidate()
-    timer = nil
-  }
-  
-  @objc func tick(timer: NSTimer) {
-    secondsLeft--
-    hud.stopwatch.setSeconds(secondsLeft)
-    if secondsLeft == 0 {
-      self.stopStopwatch()
-    }
-  }
+//  func startStopwatch() {
+//    //initialize the timer HUD
+//    secondsLeft = level.timeToSolve
+//   // hud.stopwatch.setSeconds(secondsLeft)
+//    
+//    //schedule a new timer
+//    timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector:"tick:", userInfo: nil, repeats: true)
+//  }
+//  
+//  func stopStopwatch() {
+//    timer?.invalidate()
+//    timer = nil
+//  }
+//  
+//  @objc func tick(timer: NSTimer) {
+//    secondsLeft--
+//  //  hud.stopwatch.setSeconds(secondsLeft)
+//    if secondsLeft == 0 {
+//      self.stopStopwatch()
+//    }
+//  }
   
   //the user pressed the hint button
   @objc func actionHint() {
@@ -208,8 +209,8 @@ class GameController {
     hud.hintButton.enabled = false
     
     //2
-    data.points -= level.pointsPerTile / 2
-    hud.gamePoints.setValue(data.points, duration: 1.5)
+//    data.points -= level.pointsPerTile / 2
+//    hud.gamePoints.setValue(data.points, duration: 1.5)
     
     //3 find the first unmatched target and matching tile
     var foundTarget:TargetView? = nil
@@ -294,8 +295,8 @@ extension GameController:TileDragDelegateProtocol {
         audioController.playEffect(SoundDing)
         
         //give points
-        data.points += level.pointsPerTile
-        hud.gamePoints.setValue(data.points, duration: 0.5)
+//        data.points += level.pointsPerTile
+//        hud.gamePoints.setValue(data.points, duration: 0.5)
         
         //check for finished game
         self.checkForSuccess()
@@ -321,8 +322,8 @@ extension GameController:TileDragDelegateProtocol {
         audioController.playEffect(SoundWrong)
         
         //take out points
-        data.points -= level.pointsPerTile/2
-        hud.gamePoints.setValue(data.points, duration: 0.25)
+//        data.points -= level.pointsPerTile/2
+//        hud.gamePoints.setValue(data.points, duration: 0.25)
       }
     }
     
