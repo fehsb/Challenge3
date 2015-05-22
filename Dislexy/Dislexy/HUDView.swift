@@ -48,7 +48,7 @@ class HUDView: UIView {
     hintButton.titleLabel?.font = FontHUD
     hintButton.setBackgroundImage(hintButtonImage, forState: .Normal)
     hintButton.frame = CGRectMake(ScreenWidth/2 - hintButtonImage.size.width/2, ScreenHeight - (hintButtonImage.size.height + 80), hintButtonImage.size.width, hintButtonImage.size.height)
-    hintButton.alpha = 0.8
+    hintButton.alpha = 1.0
     self.addSubview(hintButton)
   }
   

@@ -583,7 +583,7 @@
             </objects>
             <point key="canvasLocation" x="2172" y="1329"/>
         </scene>
-        <!--Exercicio3 View Controller-->
+        <!--Exercício 3-->
         <scene sceneID="gbH-DH-NMe">
             <objects>
                 <viewController id="wcR-Ie-JMd" customClass="Exercicio3ViewController" customModule="Dislexy" customModuleProvider="target" sceneMemberID="viewController">
@@ -596,7 +596,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="1pM-PZ-dcA"/>
+                    <navigationItem key="navigationItem" title="Exercício 3" id="1pM-PZ-dcA">
+                        <barButtonItem key="leftBarButtonItem" image="fechar1x" id="N8N-ZJ-587">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="voltar:" destination="wcR-Ie-JMd" id="dkc-UN-fES"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hij-tM-eMJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -633,6 +640,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.094117647060000004" green="0.70980392160000005" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

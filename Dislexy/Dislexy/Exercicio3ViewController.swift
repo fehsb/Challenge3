@@ -84,4 +84,16 @@ class Exercicio3ViewController: UIViewController {
         controller.dealRandomAnagram()
     }
     
+    func sair(){
+        
+        
+        navigationController?.presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
+        
+    }
+    
+    
+    @IBAction func voltar(sender: AnyObject) {
+        sair()
+    }
+    
 }
