@@ -51,20 +51,20 @@ class Exercicio3ViewController: UIViewController {
     
     func showLevelMenu() {
         //1 show the level selector menu
-        let alertController = UIAlertController(title: "Choose Difficulty Level",
+        let alertController = UIAlertController(title: "Escolha a dificuldade:",
             message: nil,
             preferredStyle:UIAlertControllerStyle.Alert)
         
         //2 set up the menu actions
-        let easy = UIAlertAction(title: "Easy-peasy", style:.Default,
+        let easy = UIAlertAction(title: "Nivel 1", style:.Default,
             handler: {(alert:UIAlertAction!) in
                 self.showLevel(1)
         })
-        let hard = UIAlertAction(title: "Challenge accepted", style:.Default,
+        let hard = UIAlertAction(title: "Nivel 2", style:.Default,
             handler: {(alert:UIAlertAction!) in
                 self.showLevel(2)
         })
-        let hardest = UIAlertAction(title: "I'm totally hard-core", style: .Default,
+        let hardest = UIAlertAction(title: "Nivel 3", style: .Default,
             handler: {(alert:UIAlertAction!) in
                 self.showLevel(3)
         })

@@ -44,7 +44,7 @@ class HUDView: UIView {
     
     //the help button
     self.hintButton = UIButton.buttonWithType(.Custom) as! UIButton
-    hintButton.setTitle("Hint!", forState:.Normal)
+    hintButton.setTitle("Dica", forState:.Normal)
     hintButton.titleLabel?.font = FontHUD
     hintButton.setBackgroundImage(hintButtonImage, forState: .Normal)
     hintButton.frame = CGRectMake(ScreenWidth/2 - hintButtonImage.size.width/2, ScreenHeight - (hintButtonImage.size.height + 80), hintButtonImage.size.width, hintButtonImage.size.height)
