@@ -12,6 +12,8 @@ class Exercicio3ViewController: UIViewController {
     
     private let controller:GameController
     
+    @IBOutlet weak var btnDica: UIButton!
+    
     required init(coder aDecoder: NSCoder) {
         controller = GameController()
         super.init(coder: aDecoder)
@@ -27,17 +29,23 @@ class Exercicio3ViewController: UIViewController {
         controller.gameView = gameView
         
         //add one view for all hud and controls
-        let hudView = HUDView(frame: CGRect(x: 0, y: 0, width: ScreenWidth, height: ScreenHeight))
-        self.view.addSubview(hudView)
-        controller.hud = hudView
+//        let hudView = HUDView(frame: CGRect(x: 0, y: 0, width: ScreenWidth, height: ScreenHeight))
+//        self.view.addSubview(hudView)
+//        controller.hud = hudView
         
         controller.onAnagramSolved = self.showLevelMenu
     }
     
     //show the game menu on app start
     override func viewDidAppear(animated: Bool) {
+        
         super.viewDidAppear(animated)
+        
         self.showLevelMenu()
+        
+        self.view.bringSubviewToFront(btnDica)
+        
+
     }
     
     override func didReceiveMemoryWarning() {
@@ -76,6 +84,8 @@ class Exercicio3ViewController: UIViewController {
         
         //4 show the UIAlertController
         self.presentViewController(alertController, animated: true, completion: nil)
+        
+        
     }
     
     //5 show the appropriate level selected by the player
@@ -86,7 +96,6 @@ class Exercicio3ViewController: UIViewController {
     
     func sair(){
         
-        
         navigationController?.presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
         
     }
@@ -95,5 +104,12 @@ class Exercicio3ViewController: UIViewController {
     @IBAction func voltar(sender: AnyObject) {
         sair()
     }
+    
+    @IBAction func DicaButton(sender: AnyObject) {
+        
+        controller.actionHint()
+
+    }
+    
     
 }

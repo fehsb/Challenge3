@@ -43,13 +43,13 @@ class HUDView: UIView {
     let hintButtonImage = UIImage(named: "btn")!
     
     //the help button
-    self.hintButton = UIButton.buttonWithType(.Custom) as! UIButton
-    hintButton.setTitle("Dica", forState:.Normal)
-    hintButton.titleLabel?.font = FontHUD
-    hintButton.setBackgroundImage(hintButtonImage, forState: .Normal)
-    hintButton.frame = CGRectMake(ScreenWidth/2 - hintButtonImage.size.width/2, ScreenHeight - (hintButtonImage.size.height + 80), hintButtonImage.size.width, hintButtonImage.size.height)
-    hintButton.alpha = 1.0
-    self.addSubview(hintButton)
+//    self.hintButton = UIButton.buttonWithType(.Custom) as! UIButton
+//    hintButton.setTitle("Dica", forState:.Normal)
+//    hintButton.titleLabel?.font = FontHUD
+//    hintButton.setBackgroundImage(hintButtonImage, forState: .Normal)
+//    hintButton.frame = CGRectMake(ScreenWidth/2 - hintButtonImage.size.width/2, ScreenHeight - (hintButtonImage.size.height + 80), hintButtonImage.size.width, hintButtonImage.size.height)
+//    hintButton.alpha = 1.0
+//    self.addSubview(hintButton)
   }
   
   override func hitTest(point: CGPoint, withEvent event: UIEvent?) -> UIView? {

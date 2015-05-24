@@ -16,13 +16,13 @@ class GameController {
   private var tiles = [TileView]()
   private var targets = [TargetView]()
   
-  var hud:HUDView! {
-    didSet {
-      //connect the Hint button
-      hud.hintButton.addTarget(self, action: Selector("actionHint"), forControlEvents:.TouchUpInside)
-      hud.hintButton.enabled = false
-    }
-  }
+//  var hud:HUDView! {
+//    didSet {
+//      //connect the Hint button
+//      hud.hintButton.addTarget(self, action: Selector("actionHint"), forControlEvents:.TouchUpInside)
+//      hud.hintButton.enabled = false
+//    }
+//  }
   
   //stopwatch variables
   //private var secondsLeft: Int = 0
@@ -103,8 +103,7 @@ class GameController {
     
     //start the timer
   //  self.startStopwatch()
-    
-    hud.hintButton.enabled = true
+
     
   }
   
@@ -148,7 +147,6 @@ class GameController {
     }
     println("Game Over!")
     
-    hud.hintButton.enabled = false
     
     //stop the stopwatch
    // self.stopStopwatch()
@@ -206,7 +204,6 @@ class GameController {
   //the user pressed the hint button
   @objc func actionHint() {
     //1
-    hud.hintButton.enabled = false
     
     //2
 //    data.points -= level.pointsPerTile / 2
@@ -249,7 +246,7 @@ class GameController {
           self.placeTile(tile, targetView: target)
           
           //8 re-enable the button
-          self.hud.hintButton.enabled = true
+        //  self.hud.hintButton.enabled = true
           
           //9 check for finished game
           self.checkForSuccess()

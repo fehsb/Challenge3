@@ -40,8 +40,8 @@
                                     <constraint firstAttribute="width" constant="720" id="tCZ-qg-Tug"/>
                                 </constraints>
                             </imageView>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0gy-Rr-yxa">
-                                <rect key="frame" x="0.0" y="-14" width="600" height="351"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0gy-Rr-yxa">
+                                <rect key="frame" x="0.0" y="-14" width="600" height="449"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="t70-QT-ujt">
                                         <rect key="frame" x="169" y="152" width="262" height="87"/>
@@ -105,8 +105,8 @@
                                     <segue destination="QQP-Wn-1uy" kind="show" id="L0z-fm-ipb"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vn9-2f-3ua" customClass="RFButton" customModule="Dislexy" customModuleProvider="target">
-                                <rect key="frame" x="15" y="443" width="568" height="60"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vn9-2f-3ua" customClass="RFButton" customModule="Dislexy" customModuleProvider="target">
+                                <rect key="frame" x="16" y="519" width="568" height="60"/>
                                 <color key="backgroundColor" red="0.094117647060000004" green="0.70980392160000005" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="mhV-yj-pQe"/>
@@ -128,15 +128,15 @@
                                     <segue destination="Llg-As-5UG" kind="presentation" id="c1o-ab-Cuz"/>
                                 </connections>
                             </button>
-                            <pageControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" currentPage="1" translatesAutoresizingMaskIntoConstraints="NO" id="9FF-oa-OAn">
-                                <rect key="frame" x="280" y="311" width="39" height="37"/>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" currentPage="1" translatesAutoresizingMaskIntoConstraints="NO" id="9FF-oa-OAn">
+                                <rect key="frame" x="280" y="382" width="39" height="37"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="39" id="QSZ-Rq-7uq"/>
                                     <constraint firstAttribute="height" constant="37" id="iLs-tg-MmL"/>
                                 </constraints>
                             </pageControl>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hPF-f0-86U" customClass="RFButton" customModule="Dislexy" customModuleProvider="target">
-                                <rect key="frame" x="15" y="511" width="566" height="60"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hPF-f0-86U" customClass="RFButton" customModule="Dislexy" customModuleProvider="target">
+                                <rect key="frame" x="16" y="587" width="566" height="60"/>
                                 <color key="backgroundColor" red="0.094117647060000004" green="0.70980392160000005" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="4CL-9y-T62"/>
@@ -223,8 +223,8 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Si5-M9-t8U" id="sc4-7D-rfY">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WTW-so-aG1">
-                                                    <rect key="frame" x="41" y="59" width="318" height="98"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WTW-so-aG1">
+                                                    <rect key="frame" x="141" y="59" width="318" height="98"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="318" id="6YW-SL-d31"/>
                                                         <constraint firstAttribute="height" constant="98" id="Qo7-0v-Mia"/>
@@ -251,8 +251,8 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="C8I-bk-ePj" id="isU-s7-XBe">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="escreva aqui" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WfZ-8X-qqG" customClass="RFTextField" customModule="Dislexy" customModuleProvider="target">
-                                                    <rect key="frame" x="16" y="5" width="368" height="50"/>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="escreva aqui" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WfZ-8X-qqG" customClass="RFTextField" customModule="Dislexy" customModuleProvider="target">
+                                                    <rect key="frame" x="16" y="5" width="568" height="50"/>
                                                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="50" id="Sr5-tJ-pKG"/>
@@ -287,8 +287,8 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mWa-Fp-scf" id="mNc-4A-Maa">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="escreva aqui" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Oc1-Hw-ibM" customClass="RFTextField" customModule="Dislexy" customModuleProvider="target">
-                                                    <rect key="frame" x="16" y="5" width="368" height="50"/>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="escreva aqui" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Oc1-Hw-ibM" customClass="RFTextField" customModule="Dislexy" customModuleProvider="target">
+                                                    <rect key="frame" x="16" y="5" width="568" height="50"/>
                                                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="50" id="VJv-YR-fei"/>
@@ -323,8 +323,8 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4aS-AW-lW6" id="zMZ-l8-Wq9">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="escreva aqui" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gde-mg-idJ" customClass="RFTextField" customModule="Dislexy" customModuleProvider="target">
-                                                    <rect key="frame" x="16" y="5" width="368" height="50"/>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="escreva aqui" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gde-mg-idJ" customClass="RFTextField" customModule="Dislexy" customModuleProvider="target">
+                                                    <rect key="frame" x="16" y="5" width="568" height="50"/>
                                                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="50" id="CKQ-co-1eR"/>
@@ -359,8 +359,8 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="D5g-Ca-N4S" id="0os-SC-Pgs">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="escreva aqui" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KTz-tL-QdC" customClass="RFTextField" customModule="Dislexy" customModuleProvider="target">
-                                                    <rect key="frame" x="16" y="5" width="368" height="50"/>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="escreva aqui" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KTz-tL-QdC" customClass="RFTextField" customModule="Dislexy" customModuleProvider="target">
+                                                    <rect key="frame" x="16" y="5" width="568" height="50"/>
                                                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="50" id="fWp-Cm-Fgx"/>
@@ -395,8 +395,8 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lxi-FE-4RY" id="wuX-Qc-Fn1">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jDD-FT-l3y">
-                                                    <rect key="frame" x="178" y="54" width="40" height="40"/>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jDD-FT-l3y">
+                                                    <rect key="frame" x="278" y="54" width="40" height="40"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="40" id="gef-II-w6R"/>
                                                         <constraint firstAttribute="height" constant="40" id="y3P-LD-wSb"/>
@@ -448,7 +448,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2172" y="586.5"/>
+            <point key="canvasLocation" x="2219" y="579"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="0aq-bG-6Q6">
@@ -594,7 +594,40 @@
                     <view key="view" contentMode="scaleToFill" id="8Sk-bV-0vP">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tlg-9r-g1i">
+                                <rect key="frame" x="210" y="438" width="180" height="50"/>
+                                <color key="backgroundColor" red="0.28330982209807737" green="0.73496685610000001" blue="0.52069652172176395" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="cJ5-Tx-ojf"/>
+                                    <constraint firstAttribute="width" constant="180" id="ejl-e2-zdv"/>
+                                </constraints>
+                                <state key="normal" title="Dica">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="-1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="DicaButton:" destination="wcR-Ie-JMd" eventType="touchUpInside" id="HpR-vO-mLT"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="tlg-9r-g1i" secondAttribute="centerX" id="Sk7-Dk-QEQ"/>
+                            <constraint firstItem="oa0-sn-uUf" firstAttribute="top" secondItem="tlg-9r-g1i" secondAttribute="bottom" constant="48" id="gDJ-9q-mbq"/>
+                            <constraint firstAttribute="centerX" secondItem="tlg-9r-g1i" secondAttribute="centerX" id="m4J-1V-0CN"/>
+                            <constraint firstItem="oa0-sn-uUf" firstAttribute="top" secondItem="tlg-9r-g1i" secondAttribute="bottom" constant="48" id="q3O-VH-aef"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Sk7-Dk-QEQ"/>
+                                <exclude reference="gDJ-9q-mbq"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Exercício 3" id="1pM-PZ-dcA">
                         <barButtonItem key="leftBarButtonItem" image="fechar1x" id="N8N-ZJ-587">
@@ -604,6 +637,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="btnDica" destination="tlg-9r-g1i" id="F4l-kI-tY6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hij-tM-eMJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
