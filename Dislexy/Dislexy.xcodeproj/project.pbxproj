@@ -229,11 +229,11 @@
 		D4210A421B0E68E0005A92CA /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D4210A4C1B0E69A4005A92CA /* StopwatchView.swift */,
 				D4210A481B0E69A4005A92CA /* CounterLabelView.swift */,
 				D4210A491B0E69A4005A92CA /* ExplodeView.swift */,
 				D4210A4A1B0E69A4005A92CA /* HUDView.swift */,
 				D4210A4B1B0E69A4005A92CA /* StardustView.swift */,
-				D4210A4C1B0E69A4005A92CA /* StopwatchView.swift */,
 				D4210A4D1B0E69A4005A92CA /* TargetView.swift */,
 				D4210A4E1B0E69A4005A92CA /* TileView.swift */,
 			);

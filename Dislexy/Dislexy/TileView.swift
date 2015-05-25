@@ -53,8 +53,8 @@ class TileView:UIImageView {
     letterLabel.textAlignment = NSTextAlignment.Center
     letterLabel.textColor = UIColor.whiteColor()
     letterLabel.backgroundColor = UIColor.clearColor()
-    letterLabel.text = String(letter).uppercaseString
-    letterLabel.font = UIFont(name: "Verdana-Bold", size: 78.0*scale)
+    letterLabel.text = String(letter).lowercaseString
+    letterLabel.font = UIFont(name: "Oduda-Bold", size: 78.0*scale)
     self.addSubview(letterLabel)
     
     self.userInteractionEnabled = true

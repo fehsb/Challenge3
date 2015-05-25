@@ -33,7 +33,8 @@ class Exercicio3ViewController: UIViewController {
 //        self.view.addSubview(hudView)
 //        controller.hud = hudView
         
-        controller.onAnagramSolved = self.showLevelMenu
+        //controller.onAnagramSolved = self.showLevelMenu
+        controller.onAnagramSolved = self.shoeLevelMenu
     }
     
     //show the game menu on app start
@@ -41,7 +42,7 @@ class Exercicio3ViewController: UIViewController {
         
         super.viewDidAppear(animated)
         
-        self.showLevelMenu()
+        self.shoeLevelMenu()
         
         self.view.bringSubviewToFront(btnDica)
         
@@ -55,6 +56,31 @@ class Exercicio3ViewController: UIViewController {
     
     override func prefersStatusBarHidden() -> Bool {
         return true
+    }
+    
+    func shoeLevelMenu(){
+    
+        var sucessTitle = "Escolha o level:"
+        var subtitle = String()
+        
+        subtitle = ""
+        
+        let alert = SCLAlertView()
+        
+        alert.addButton("Level 1", action: { () -> Void in
+            self.showLevel(1)
+            
+        })
+        
+        alert.addButton("Level 2", action: { () -> Void in
+            self.showLevel(2)
+        })
+
+        alert.addButton("Sair", target: alert, selector: "hideView2")
+        
+        alert.showSuccess(sucessTitle, subTitle: subtitle)
+        
+
     }
     
     func showLevelMenu() {
