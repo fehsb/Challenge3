@@ -10,11 +10,11 @@
             <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="OHO-gC-Mdt">
-                    <rect key="frame" x="90" y="190" width="300" height="100"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo2" translatesAutoresizingMaskIntoConstraints="NO" id="OHO-gC-Mdt">
+                    <rect key="frame" x="99" y="209" width="283" height="62"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="100" id="2m7-dy-X56"/>
-                        <constraint firstAttribute="width" constant="300" id="vs0-XZ-nbD"/>
+                        <constraint firstAttribute="height" constant="62" id="2m7-dy-X56"/>
+                        <constraint firstAttribute="width" constant="283" id="vs0-XZ-nbD"/>
                     </constraints>
                 </imageView>
             </subviews>
@@ -29,6 +29,6 @@
         </view>
     </objects>
     <resources>
-        <image name="logo" width="600" height="200"/>
+        <image name="logo2" width="456" height="100"/>
     </resources>
 </document>
