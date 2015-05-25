@@ -27,6 +27,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
     
         let defaults = NSUserDefaults.standardUserDefaults()
+        
         if let x: AnyObject = defaults.valueForKey("ex1") {
         
         }else{
@@ -37,6 +38,12 @@ class ViewController: UIViewController {
             
         }else{
             defaults.setInteger(0, forKey: "ex2")
+        }
+
+        if let z: AnyObject = defaults.valueForKey("ex3") {
+            
+        }else{
+            defaults.setInteger(0, forKey: "ex3")
         }
 
         

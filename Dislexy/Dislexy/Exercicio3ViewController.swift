@@ -27,6 +27,20 @@ class Exercicio3ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.shoeLevelMenu()
+        
+        let defaults = NSUserDefaults.standardUserDefaults()
+        var vez = defaults.valueForKey("ex3") as! Int
+        
+        if (vez == 0){
+            
+            instruction()
+            defaults.setInteger(1, forKey: "ex3")
+            
+        }
+        
+        
+        
         //add one layer for all game elements
         let gameView = UIView(frame: CGRectMake(0, 0, ScreenWidth, ScreenHeight))
         self.view.addSubview(gameView)
@@ -46,7 +60,7 @@ class Exercicio3ViewController: UIViewController {
         
         super.viewDidAppear(animated)
         
-        self.shoeLevelMenu()
+//        self.shoeLevelMenu()
         
         self.view.bringSubviewToFront(btnDica)
         
@@ -60,6 +74,16 @@ class Exercicio3ViewController: UIViewController {
     
     override func prefersStatusBarHidden() -> Bool {
         return true
+    }
+    
+    func instruction(){
+        var subtitle = ""
+        var tempo = NSTimeInterval.infinity
+        
+        let alert = SCLAlertView()
+        
+        alert.showInfo("Instruções", subTitle: "Forme a palavra correta movendo as letras nos devidos espaços", closeButtonTitle: "Ok", duration: tempo )
+        
     }
     
     func shoeLevelMenu(){
