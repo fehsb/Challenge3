@@ -12,6 +12,10 @@ class Exercicio3ViewController: UIViewController {
     
     private let controller:GameController
     
+    var jogadas = 0
+    
+    var escolha = 0
+    
     @IBOutlet weak var btnDica: UIButton!
     
     required init(coder aDecoder: NSCoder) {
@@ -29,12 +33,12 @@ class Exercicio3ViewController: UIViewController {
         controller.gameView = gameView
         
         //add one view for all hud and controls
-//        let hudView = HUDView(frame: CGRect(x: 0, y: 0, width: ScreenWidth, height: ScreenHeight))
-//        self.view.addSubview(hudView)
-//        controller.hud = hudView
+        //        let hudView = HUDView(frame: CGRect(x: 0, y: 0, width: ScreenWidth, height: ScreenHeight))
+        //        self.view.addSubview(hudView)
+        //        controller.hud = hudView
         
         //controller.onAnagramSolved = self.showLevelMenu
-        controller.onAnagramSolved = self.shoeLevelMenu
+        controller.onAnagramSolved = self.showFinal
     }
     
     //show the game menu on app start
@@ -46,7 +50,7 @@ class Exercicio3ViewController: UIViewController {
         
         self.view.bringSubviewToFront(btnDica)
         
-
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -59,7 +63,7 @@ class Exercicio3ViewController: UIViewController {
     }
     
     func shoeLevelMenu(){
-    
+        
         var sucessTitle = "Escolha o level:"
         var subtitle = String()
         
@@ -69,18 +73,51 @@ class Exercicio3ViewController: UIViewController {
         
         alert.addButton("Level 1", action: { () -> Void in
             self.showLevel(1)
+            self.escolha = 1
             
         })
         
         alert.addButton("Level 2", action: { () -> Void in
             self.showLevel(2)
+            self.escolha = 2
         })
-
-        alert.addButton("Sair", target: alert, selector: "hideView2")
+        
+        alert.addButton("Sair", target: alert, selector: "hideView")
         
         alert.showSuccess(sucessTitle, subTitle: subtitle)
         
-
+        
+    }
+    
+    func showFinal(){
+        
+            jogadas++
+        
+        
+        if (jogadas == 3) {
+            var sucessTitle = "Parábens"
+            var subtitle = String()
+            
+            subtitle = "Continue sempre praticando :)"
+            
+            let alert = SCLAlertView()
+            
+            
+            alert.addButton("Jogar novamente", action: { () -> Void in
+                alert.hideView()
+                self.shoeLevelMenu()
+                self.jogadas = 0
+            })
+            
+            alert.addButton("Sair do exercício", action: { () -> Void in
+                alert.hideView()
+                self.sair()
+            })
+            
+            alert.showSuccess(sucessTitle, subTitle: subtitle)
+        }else{
+            self.showLevel(escolha)
+        }
     }
     
     func showLevelMenu() {
@@ -134,7 +171,7 @@ class Exercicio3ViewController: UIViewController {
     @IBAction func DicaButton(sender: AnyObject) {
         
         controller.actionHint()
-
+        
     }
     
     

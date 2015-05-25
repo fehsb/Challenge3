@@ -64,7 +64,7 @@ class Exercicio1TableViewController: UITableViewController, UITextFieldDelegate 
         super.viewWillDisappear(animated)
         NSNotificationCenter.defaultCenter().removeObserver(self)
     }
-
+    
     
     @IBAction func btnOk(sender: AnyObject) {
         
@@ -75,23 +75,26 @@ class Exercicio1TableViewController: UITableViewController, UITextFieldDelegate 
         if(textField1.text == ""){
             SCLAlertView().showNotice("ATENÇÃO", subTitle: "Todos os campos devem ser preenchidos com palavras.")
             return
-        }
-        if(textField2.text == ""){
-            SCLAlertView().showNotice("ATENÇÃO", subTitle: "Todos os campos devem ser preenchidos com palavras.")
-            return
-        }
-        if(textField3.text == ""){
-            SCLAlertView().showNotice("ATENÇÃO", subTitle: "Todos os campos devem ser preenchidos com palavras.")
-            return
-        }
-        if(textField4.text == ""){
-            SCLAlertView().showNotice("ATENÇÃO", subTitle: "Todos os campos devem ser preenchidos com palavras.")
-            return
         }else{
-       verificaAcerto()
+            if(textField2.text == ""){
+                SCLAlertView().showNotice("ATENÇÃO", subTitle: "Todos os campos devem ser preenchidos com palavras.")
+                return
+            }else{
+                if(textField3.text == ""){
+                    SCLAlertView().showNotice("ATENÇÃO", subTitle: "Todos os campos devem ser preenchidos com palavras.")
+                    return
+                }else{
+                    if(textField4.text == ""){
+                        SCLAlertView().showNotice("ATENÇÃO", subTitle: "Todos os campos devem ser preenchidos com palavras.")
+                        return
+                    }else{
+                        verificaAcerto()
+                    }
+                }
+            }
         }
         
-       
+        
     }
     
     func resignTextFields() {
@@ -144,7 +147,7 @@ class Exercicio1TableViewController: UITableViewController, UITextFieldDelegate 
         iniciaJogo()
     }
     
-
+    
     @IBAction func toque(sender: AnyObject) {
         self.view.endEditing(true)
     }
@@ -157,28 +160,29 @@ class Exercicio1TableViewController: UITableViewController, UITextFieldDelegate 
         let alert = SCLAlertView()
         
         alert.showInfo("Instruções", subTitle: "Digite 4 palavras diferentes que comecem com a mesma letra da palavra apresentada", closeButtonTitle: "Ok", duration: tempo )
-
+        
     }
     
-
+    
     func iniciaJogo(){
+        
         if jogadas == 3 {
-        //chama o alerta com os resultados
+            //chama o alerta com os resultados
             var sucessTitle = "FIM"
             var subtitle = String()
             
             switch(acertos){
-                case 0:
-                    subtitle = "Você não acertou nenhuma rodada. Continue treinando e chegará lá."
+            case 0:
+                subtitle = "Você não acertou nenhuma rodada. Continue treinando e chegará lá."
                 break
-                case 1:
-                    subtitle = "Você conseguiu 1 acerto. Continue treinando e chegará lá."
+            case 1:
+                subtitle = "Você conseguiu 1 acerto. Continue treinando e chegará lá."
                 break
-                case 2:
-                    subtitle = "Muito bom! Você conseguiu 2 acertos. Continue treinando e chegará lá."
+            case 2:
+                subtitle = "Muito bom! Você conseguiu 2 acertos. Continue treinando e chegará lá."
                 break
-                case 3:
-                    subtitle = "Parabéns! Você acertou tudo. Mas não se esqueça: a prática leva a perfeição."
+            case 3:
+                subtitle = "Parabéns! Você acertou tudo. Mas não se esqueça: a prática leva a perfeição."
                 break
             default:
                 subtitle = "error"
@@ -195,7 +199,7 @@ class Exercicio1TableViewController: UITableViewController, UITextFieldDelegate 
             alert.showSuccess(sucessTitle, subTitle: subtitle)
             
         }else{
-        //incrementa jogadas
+            //incrementa jogadas
             jogadas++
             palav = randomPalavra()
             letra.text = palav
@@ -214,9 +218,9 @@ class Exercicio1TableViewController: UITableViewController, UITextFieldDelegate 
     
     func sair(){
         
-//        let secondViewController:ViewController = self.storyboard!.instantiateViewControllerWithIdentifier("principal") as! ViewController
-//        
-//        self.presentViewController(secondViewController, animated: true, completion: nil)
+        //        let secondViewController:ViewController = self.storyboard!.instantiateViewControllerWithIdentifier("principal") as! ViewController
+        //
+        //        self.presentViewController(secondViewController, animated: true, completion: nil)
         
         navigationController?.presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
         
