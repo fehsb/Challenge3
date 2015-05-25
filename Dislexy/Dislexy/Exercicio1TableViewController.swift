@@ -45,7 +45,9 @@ class Exercicio1TableViewController: UITableViewController, UITextFieldDelegate 
         textField3.delegate = self
         textField4.delegate = self
         
-        iniciaJogo()
+        if (jogadas == 0 ){
+            iniciaJogo()
+        }
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -74,18 +76,22 @@ class Exercicio1TableViewController: UITableViewController, UITextFieldDelegate 
         
         if(textField1.text == ""){
             SCLAlertView().showNotice("ATENÇÃO", subTitle: "Todos os campos devem ser preenchidos com palavras.")
+            jogadas = jogadas - 1
             return
         }else{
             if(textField2.text == ""){
                 SCLAlertView().showNotice("ATENÇÃO", subTitle: "Todos os campos devem ser preenchidos com palavras.")
+                jogadas = jogadas - 1
                 return
             }else{
                 if(textField3.text == ""){
                     SCLAlertView().showNotice("ATENÇÃO", subTitle: "Todos os campos devem ser preenchidos com palavras.")
+                    jogadas = jogadas - 1
                     return
                 }else{
                     if(textField4.text == ""){
                         SCLAlertView().showNotice("ATENÇÃO", subTitle: "Todos os campos devem ser preenchidos com palavras.")
+                        jogadas = jogadas - 1
                         return
                     }else{
                         verificaAcerto()
@@ -144,7 +150,7 @@ class Exercicio1TableViewController: UITableViewController, UITextFieldDelegate 
         
         if (erros == 0){
             acertos++}
-        iniciaJogo()
+            iniciaJogo()
     }
     
     

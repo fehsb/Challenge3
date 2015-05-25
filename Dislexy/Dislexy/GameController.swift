@@ -90,7 +90,7 @@ class GameController {
       //3
       if letter != " " {
         let tile = TileView(letter: letter, sideLength: tileSide)
-        tile.center = CGPointMake(xOffset + CGFloat(index)*(tileSide + TileMargin) + 10, ScreenHeight/4*3 - 30)
+        tile.center = CGPointMake(xOffset + CGFloat(index)*(tileSide + TileMargin) + 10, ScreenHeight/4*2.4)
         
         tile.randomize()
         tile.dragDelegate = self
