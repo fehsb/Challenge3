@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var viewInvisivel: UIView!
     
-    let texto = ["bla bla bla","ble ble ble","bli bli bli"]
+    let texto = ["Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, um","Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, dois","Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, tres"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
