@@ -125,13 +125,6 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0gy-Rr-yxa">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="349"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo2" translatesAutoresizingMaskIntoConstraints="NO" id="t70-QT-ujt">
-                                        <rect key="frame" x="152" y="115" width="297" height="65"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="297" id="Uk4-eR-ZDu"/>
-                                            <constraint firstAttribute="height" constant="65" id="xpx-04-xvS"/>
-                                        </constraints>
-                                    </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UOe-3r-PDf">
                                         <rect key="frame" x="560" y="35" width="32" height="32"/>
                                         <constraints>
@@ -143,7 +136,7 @@
                                         </state>
                                     </button>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Xou-I5-MBA">
-                                        <rect key="frame" x="180" y="220" width="240" height="59"/>
+                                        <rect key="frame" x="180" y="235" width="240" height="59"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="240" id="5vE-kr-4To"/>
                                         </constraints>
@@ -155,16 +148,23 @@
                                     <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" currentPage="1" translatesAutoresizingMaskIntoConstraints="NO" id="9FF-oa-OAn">
                                         <rect key="frame" x="281" y="304" width="39" height="37"/>
                                     </pageControl>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="t70-QT-ujt">
+                                        <rect key="frame" x="188" y="105" width="225" height="75"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="225" id="Uk4-eR-ZDu"/>
+                                            <constraint firstAttribute="height" constant="75" id="xpx-04-xvS"/>
+                                        </constraints>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.094117647060000004" green="0.70980392160000005" blue="0.48627450979999998" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="centerX" secondItem="9FF-oa-OAn" secondAttribute="centerX" constant="-0.5" id="2Tg-OL-Byq"/>
                                     <constraint firstAttribute="bottom" secondItem="9FF-oa-OAn" secondAttribute="bottom" constant="8" id="ANB-xz-mvy"/>
-                                    <constraint firstItem="Xou-I5-MBA" firstAttribute="top" secondItem="t70-QT-ujt" secondAttribute="bottom" constant="40" id="DHH-OY-sBp"/>
-                                    <constraint firstItem="9FF-oa-OAn" firstAttribute="top" secondItem="Xou-I5-MBA" secondAttribute="bottom" constant="25" id="LxG-M2-HkZ"/>
+                                    <constraint firstItem="Xou-I5-MBA" firstAttribute="top" secondItem="t70-QT-ujt" secondAttribute="bottom" constant="55" id="DHH-OY-sBp"/>
+                                    <constraint firstItem="9FF-oa-OAn" firstAttribute="top" secondItem="Xou-I5-MBA" secondAttribute="bottom" constant="10" id="LxG-M2-HkZ"/>
                                     <constraint firstAttribute="height" constant="449" id="R8q-pE-2vN"/>
-                                    <constraint firstAttribute="centerY" secondItem="t70-QT-ujt" secondAttribute="centerY" constant="27" id="SOA-ht-aqK"/>
+                                    <constraint firstAttribute="centerY" secondItem="t70-QT-ujt" secondAttribute="centerY" constant="32" id="SOA-ht-aqK"/>
                                     <constraint firstAttribute="centerX" secondItem="Xou-I5-MBA" secondAttribute="centerX" id="Xvu-Gd-Dxd"/>
                                     <constraint firstAttribute="trailing" secondItem="UOe-3r-PDf" secondAttribute="trailing" constant="8" id="YuY-kB-YmJ"/>
                                     <constraint firstAttribute="centerX" secondItem="t70-QT-ujt" secondAttribute="centerX" constant="-0.5" id="hBP-TE-v1z"/>
@@ -723,7 +723,7 @@
         <image name="about_filled-100" width="48" height="48"/>
         <image name="fe4a5cbf" width="4896" height="3264"/>
         <image name="fechar1x" width="22" height="22"/>
-        <image name="logo2" width="456" height="100"/>
+        <image name="logo" width="225" height="75"/>
         <image name="right_filled-100" width="32" height="32"/>
     </resources>
     <color key="tintColor" red="0.094117647060000004" green="0.70980392160000005" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
