@@ -18,6 +18,12 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var backGroundImg: UIImageView!
     
+    @IBOutlet weak var seta1: UIImageView!
+    
+    @IBOutlet weak var seta2: UIImageView!
+    
+    @IBOutlet weak var seta3: UIImageView!
+    
     
     @IBOutlet weak var viewInvisivel: UIView!
     

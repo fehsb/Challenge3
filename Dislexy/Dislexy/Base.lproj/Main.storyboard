@@ -252,6 +252,9 @@
                         <outlet property="backGroundImg" destination="bFg-q4-Tq2" id="Vxs-yg-gxd"/>
                         <outlet property="imgLogo" destination="t70-QT-ujt" id="i7J-dM-ogd"/>
                         <outlet property="pageControl" destination="9FF-oa-OAn" id="U0t-gj-opH"/>
+                        <outlet property="seta1" destination="nvh-GF-1yK" id="JHf-Ie-FH8"/>
+                        <outlet property="seta2" destination="uzE-jo-efK" id="muf-q4-2Dd"/>
+                        <outlet property="seta3" destination="d6j-Rb-gBB" id="BDo-Yv-7JK"/>
                         <outlet property="txtView" destination="Xou-I5-MBA" id="MEp-i1-8D0"/>
                         <outlet property="viewInvisivel" destination="0gy-Rr-yxa" id="4s2-ax-YS9"/>
                     </connections>
