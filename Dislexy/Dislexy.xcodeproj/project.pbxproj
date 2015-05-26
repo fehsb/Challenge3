@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CA108E2D1B08E73B0068B949 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA108E2C1B08E73B0068B949 /* DesignableView.swift */; };
+		CA221CA41B14E59C00F773A6 /* AboutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA221CA31B14E59C00F773A6 /* AboutTableViewController.swift */; };
 		CABC1CD01B0E6BC300725929 /* Oduda-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = CABC1CCF1B0E6BC300725929 /* Oduda-Bold.otf */; };
 		CABC1CEB1B0FA1E100725929 /* tile.png in Resources */ = {isa = PBXBuildFile; fileRef = CABC1CE71B0FA1E100725929 /* tile.png */; };
 		CABC1CEC1B0FA1E100725929 /* tile@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CABC1CE81B0FA1E100725929 /* tile@2x.png */; };
@@ -63,6 +64,7 @@
 
 /* Begin PBXFileReference section */
 		CA108E2C1B08E73B0068B949 /* DesignableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
+		CA221CA31B14E59C00F773A6 /* AboutTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AboutTableViewController.swift; path = ../AboutTableViewController.swift; sourceTree = "<group>"; };
 		CABC1CCF1B0E6BC300725929 /* Oduda-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oduda-Bold.otf"; sourceTree = "<group>"; };
 		CABC1CE71B0FA1E100725929 /* tile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tile.png; sourceTree = "<group>"; };
 		CABC1CE81B0FA1E100725929 /* tile@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tile@2x.png"; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 				D4210A7D1B0E6E56005A92CA /* Config.swift */,
 				D401B8DF1B05136B0021782F /* AppDelegate.swift */,
 				D401B8E41B05136B0021782F /* ViewController.swift */,
+				CA221CA31B14E59C00F773A6 /* AboutTableViewController.swift */,
 				D47EA00C1B066B4B00A6B08A /* Exercicio1TableViewController.swift */,
 				CAC011391B0BB81B0050155C /* Exercicio2ViewController.swift */,
 				D4210A7F1B0E6E99005A92CA /* Exercicio3ViewController.swift */,
@@ -429,6 +432,7 @@
 				D4C28AAC1B06B9880026DBBD /* SCLAlertView.swift in Sources */,
 				D401B8E31B05136B0021782F /* Dislexy.xcdatamodeld in Sources */,
 				D4210A461B0E6959005A92CA /* GameData.swift in Sources */,
+				CA221CA41B14E59C00F773A6 /* AboutTableViewController.swift in Sources */,
 				D4210A541B0E69A4005A92CA /* TargetView.swift in Sources */,
 				D4210A521B0E69A4005A92CA /* StardustView.swift in Sources */,
 				D4210A581B0E69BA005A92CA /* AudioController.swift in Sources */,
