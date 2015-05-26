@@ -91,7 +91,7 @@ class Exercicio3ViewController: UIViewController {
         var sucessTitle = "Escolha o level:"
         var subtitle = String()
         
-        subtitle = ""
+        subtitle = ":)"
         
         let alert = SCLAlertView()
         

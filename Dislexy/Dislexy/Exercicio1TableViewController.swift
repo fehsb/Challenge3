@@ -60,6 +60,7 @@ class Exercicio1TableViewController: UITableViewController, UITextFieldDelegate 
         super.viewWillAppear(animated)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "alertIsGone", name: "alertWillDisappear", object: nil)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "alertIsGone2", name: "back", object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "alertIsGo", name: "erro", object: nil)
     }
     
     override func viewWillDisappear(animated: Bool) {
@@ -214,8 +215,11 @@ class Exercicio1TableViewController: UITableViewController, UITextFieldDelegate 
     }
     
     func alertIsGone() {
-       // iniciaJogo()
-        acertos = 0
+        iniciaJogo()
+    }
+
+    func alertIsGo() {
+
     }
     
     func alertIsGone2() {
