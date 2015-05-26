@@ -106,7 +106,11 @@ class Exercicio3ViewController: UIViewController {
             self.escolha = 2
         })
         
-        alert.addButton("Sair", target: alert, selector: "hideView")
+        alert.addButton("Sair", action: { () -> Void in
+            alert.hideView()
+            self.sair()
+        })
+
         
         alert.showSuccess(sucessTitle, subTitle: subtitle)
         

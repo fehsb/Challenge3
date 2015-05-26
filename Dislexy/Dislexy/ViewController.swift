@@ -108,6 +108,7 @@ class ViewController: UIViewController {
     
     func update(){
         txtView.text = texto[pageControl.currentPage]
+        
     }
 }
 
