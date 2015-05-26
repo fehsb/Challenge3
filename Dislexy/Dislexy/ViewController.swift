@@ -27,6 +27,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var viewInvisivel: UIView!
     
+    
     let texto = ["Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, um","Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, dois","Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, tres"]
     
     override func viewDidLoad() {
@@ -55,7 +56,7 @@ class ViewController: UIViewController {
         
         txtView.text = texto[pageControl.currentPage]
         
-        
+        update()
         
     }
     
@@ -114,6 +115,37 @@ class ViewController: UIViewController {
     
     func update(){
         txtView.text = texto[pageControl.currentPage]
+        
+        switch (pageControl.currentPage){
+        case 0 :
+            UIView.animateWithDuration(0.2, animations: { () -> Void in
+                self.seta1.alpha = 1.0
+                self.seta2.alpha = 0.0
+                self.seta3.alpha = 0.0
+            })
+            break
+        case 1:
+            UIView.animateWithDuration(0.2, animations: { () -> Void in
+                self.seta1.alpha = 0.0
+                self.seta2.alpha = 1.0
+                self.seta3.alpha = 0.0
+            })
+            break
+        case 2:
+            UIView.animateWithDuration(0.2, animations: { () -> Void in
+                self.seta1.alpha = 0.0
+                self.seta2.alpha = 0.0
+                self.seta3.alpha = 1.0
+            })
+            break
+        default :
+            UIView.animateWithDuration(0.3, animations: { () -> Void in
+                self.seta1.alpha = 0.0
+                self.seta2.alpha = 0.0
+                self.seta3.alpha = 0.0
+            })
+            break
+        }
         
     }
 }
