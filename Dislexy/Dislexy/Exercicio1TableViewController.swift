@@ -214,7 +214,7 @@ class Exercicio1TableViewController: UITableViewController, UITextFieldDelegate 
     }
     
     func alertIsGone() {
-        iniciaJogo()
+       // iniciaJogo()
         acertos = 0
     }
     
