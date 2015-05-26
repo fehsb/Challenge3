@@ -24,7 +24,7 @@ class Exercicio1TableViewController: UITableViewController, UITextFieldDelegate 
     var palav:String = ""
     var acertos:Int = 0
     var jogadas:Int = 0
-    var palavras:[String] = ["dado","dedo","diretor","bola","banana","barba","pato","porco","pedra","queijo","quadro","quadrado","nariz","nabo","nuvem","urso","uva","umbigo","macaco","marrom","maracujá"]
+    var palavras:[String] = ["dado","dedo","diretor","bola","banana","barba","pato","porco","pedra","queijo","quadro","quadrado","nariz","nabo","nuvem","urso","uva","umbigo","macaco","marrom","manga"]
     
     
     

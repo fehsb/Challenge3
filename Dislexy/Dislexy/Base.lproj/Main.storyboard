@@ -148,7 +148,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" currentPage="1" translatesAutoresizingMaskIntoConstraints="NO" id="9FF-oa-OAn">
+                                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="9FF-oa-OAn">
                                         <rect key="frame" x="281" y="304" width="39" height="37"/>
                                     </pageControl>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="t70-QT-ujt">
@@ -544,9 +544,9 @@
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="esj-FO-TBy">
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="esj-FO-TBy">
                                                     <rect key="frame" x="8" y="51" width="584" height="151"/>
-                                                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
@@ -578,58 +578,82 @@
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="12p-Hr-nMj">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fernando" translatesAutoresizingMaskIntoConstraints="NO" id="12p-Hr-nMj" customClass="RFImageView" customModule="Dislexy" customModuleProvider="target">
                                                     <rect key="frame" x="160" y="90" width="100" height="100"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="100" id="00g-Ct-usx"/>
                                                         <constraint firstAttribute="width" constant="100" id="SFv-ha-pfH"/>
                                                     </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="50"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="clipping" value="YES"/>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                            <real key="value" value="3"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                            <color key="value" red="0.094117647060000004" green="0.70980392160000005" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
                                                 </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kcA-Xf-ubZ">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rafael" translatesAutoresizingMaskIntoConstraints="NO" id="kcA-Xf-ubZ" customClass="RFImageView" customModule="Dislexy" customModuleProvider="target">
                                                     <rect key="frame" x="340" y="90" width="100" height="100"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="100" id="DLm-JW-GGe"/>
                                                         <constraint firstAttribute="height" constant="100" id="bnT-Mg-VHp"/>
                                                     </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="50"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="clipping" value="YES"/>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                            <real key="value" value="3"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                            <color key="value" red="0.094117647060000004" green="0.70980392160000005" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rafael Feroli" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uxP-V7-Uww">
-                                                    <rect key="frame" x="343" y="218" width="95" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rafael Carvalho" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uxP-V7-Uww">
+                                                    <rect key="frame" x="329" y="199" width="122" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="Yo8-i1-uHO"/>
-                                                        <constraint firstAttribute="width" constant="95" id="oaE-gh-NTE"/>
+                                                        <constraint firstAttribute="width" constant="122" id="oaE-gh-NTE"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fernando Henrique" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6pf-5H-1P2">
-                                                    <rect key="frame" x="136" y="217" width="148" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fernando Henrique" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6pf-5H-1P2">
+                                                    <rect key="frame" x="136" y="199" width="148" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="148" id="q91-Me-SXp"/>
                                                         <constraint firstAttribute="height" constant="21" id="vGF-24-8Hr"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="kcA-Xf-ubZ" firstAttribute="top" secondItem="qZq-Ls-DrO" secondAttribute="bottom" constant="41" id="3QF-WE-fvT"/>
-                                                <constraint firstItem="uxP-V7-Uww" firstAttribute="leading" secondItem="6pf-5H-1P2" secondAttribute="trailing" constant="59" id="3gg-pT-GgQ"/>
+                                                <constraint firstItem="uxP-V7-Uww" firstAttribute="leading" secondItem="6pf-5H-1P2" secondAttribute="trailing" constant="45" id="3gg-pT-GgQ"/>
                                                 <constraint firstAttribute="centerY" secondItem="12p-Hr-nMj" secondAttribute="centerY" constant="259.75" id="4WL-7v-wnU"/>
                                                 <constraint firstAttribute="centerY" secondItem="kcA-Xf-ubZ" secondAttribute="centerY" constant="259.75" id="AOk-hu-DhR"/>
                                                 <constraint firstAttribute="centerX" secondItem="uxP-V7-Uww" secondAttribute="centerX" constant="-90.5" id="HN5-Oc-oCs"/>
                                                 <constraint firstAttribute="centerX" secondItem="6pf-5H-1P2" secondAttribute="centerX" constant="90" id="Icc-mm-38n"/>
-                                                <constraint firstItem="uxP-V7-Uww" firstAttribute="top" secondItem="kcA-Xf-ubZ" secondAttribute="bottom" constant="28" id="UcZ-oT-Vkt"/>
+                                                <constraint firstItem="uxP-V7-Uww" firstAttribute="top" secondItem="kcA-Xf-ubZ" secondAttribute="bottom" constant="9" id="UcZ-oT-Vkt"/>
                                                 <constraint firstItem="qZq-Ls-DrO" firstAttribute="top" secondItem="xvY-jW-0ao" secondAttribute="topMargin" constant="20" id="Vib-dh-v2D"/>
                                                 <constraint firstAttribute="centerX" secondItem="kcA-Xf-ubZ" secondAttribute="centerX" constant="-90" id="a3f-Rc-L8N"/>
                                                 <constraint firstItem="12p-Hr-nMj" firstAttribute="top" secondItem="qZq-Ls-DrO" secondAttribute="bottom" constant="41" id="azi-dA-EX4"/>
                                                 <constraint firstItem="kcA-Xf-ubZ" firstAttribute="leading" secondItem="12p-Hr-nMj" secondAttribute="trailing" constant="80" id="bmr-Fh-bqK"/>
                                                 <constraint firstItem="qZq-Ls-DrO" firstAttribute="leading" secondItem="xvY-jW-0ao" secondAttribute="leadingMargin" id="cDR-t6-Qr5"/>
-                                                <constraint firstAttribute="centerY" secondItem="6pf-5H-1P2" secondAttribute="centerY" constant="172.25" id="o0R-E5-gdM"/>
+                                                <constraint firstAttribute="centerY" secondItem="6pf-5H-1P2" secondAttribute="centerY" constant="190.5" id="o0R-E5-gdM"/>
                                                 <constraint firstAttribute="centerX" secondItem="12p-Hr-nMj" secondAttribute="centerX" constant="90" id="qIz-Jc-SVZ"/>
-                                                <constraint firstItem="6pf-5H-1P2" firstAttribute="top" secondItem="12p-Hr-nMj" secondAttribute="bottom" constant="27" id="tVm-oh-xkG"/>
-                                                <constraint firstAttribute="centerY" secondItem="uxP-V7-Uww" secondAttribute="centerY" constant="171.25" id="x3i-9Y-Gsp"/>
+                                                <constraint firstItem="6pf-5H-1P2" firstAttribute="top" secondItem="12p-Hr-nMj" secondAttribute="bottom" constant="9" id="tVm-oh-xkG"/>
+                                                <constraint firstAttribute="centerY" secondItem="uxP-V7-Uww" secondAttribute="centerY" constant="190.5" id="x3i-9Y-Gsp"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
@@ -710,7 +734,7 @@
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bcE-ph-oUA" customClass="RFButton" customModule="Dislexy" customModuleProvider="target">
                                                 <rect key="frame" x="60" y="92" width="175" height="50"/>
                                                 <color key="backgroundColor" red="0.094117647060000004" green="0.70980392160000005" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="fontDescription" name="Oduda-Bold" family="Oduda" pointSize="20"/>
+                                                <fontDescription key="fontDescription" name="Oduda-Bold" family="Oduda" pointSize="25"/>
                                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <state key="normal" title="BTN2">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -727,7 +751,7 @@
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dmz-ho-ePD" customClass="RFButton" customModule="Dislexy" customModuleProvider="target">
                                                 <rect key="frame" x="60" y="34" width="175" height="50"/>
                                                 <color key="backgroundColor" red="0.094117647060000004" green="0.70980392160000005" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="fontDescription" name="Oduda-Bold" family="Oduda" pointSize="20"/>
+                                                <fontDescription key="fontDescription" name="Oduda-Bold" family="Oduda" pointSize="25"/>
                                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <state key="normal" title="BTN1">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -924,7 +948,9 @@
         <image name="arrow" width="22" height="22"/>
         <image name="fe4a5cbf" width="4896" height="3264"/>
         <image name="fechar1x" width="22" height="22"/>
+        <image name="fernando" width="200" height="200"/>
         <image name="logo" width="225" height="75"/>
+        <image name="rafael" width="200" height="200"/>
         <image name="right_filled-100" width="32" height="32"/>
     </resources>
     <color key="tintColor" red="0.094117647060000004" green="0.70980392160000005" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
