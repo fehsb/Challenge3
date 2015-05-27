@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -29,17 +29,9 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fe4a5cbf" translatesAutoresizingMaskIntoConstraints="NO" id="bFg-q4-Tq2">
                                 <rect key="frame" x="0.0" y="-220" width="600" height="569"/>
                                 <color key="backgroundColor" red="0.6705882353" green="0.67843137249999996" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="bFg-q4-Tq2" secondAttribute="height" multiplier="48:29" id="BID-aO-KIZ"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="BID-aO-KIZ"/>
-                                    </mask>
-                                </variation>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ccz-1q-Ho5" customClass="RFButton" customModule="Dislexy" customModuleProvider="target">
-                                <rect key="frame" x="16" y="513" width="568" height="60"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ccz-1q-Ho5" customClass="RFButton" customModule="Dislexy" customModuleProvider="target">
+                                <rect key="frame" x="5" y="402" width="568" height="60"/>
                                 <color key="backgroundColor" red="0.094117647060000004" green="0.70980392160000005" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="Mj4-pr-YBW"/>
@@ -61,11 +53,8 @@
                                         <color key="value" red="0.094117647060000004" green="0.70980392160000005" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="5" y="402" width="568" height="60"/>
-                                </variation>
                                 <connections>
-                                    <segue destination="QQP-Wn-1uy" kind="show" id="L0z-fm-ipb"/>
+                                    <segue destination="QQP-Wn-1uy" kind="presentation" id="L0z-fm-ipb"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hPF-f0-86U" customClass="RFButton" customModule="Dislexy" customModuleProvider="target">
@@ -135,7 +124,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <segue destination="Mcu-iO-Lvc" kind="show" id="lXW-eD-G6v"/>
+                                            <segue destination="Mcu-iO-Lvc" kind="presentation" id="lXW-eD-G6v"/>
                                         </connections>
                                     </button>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Xou-I5-MBA">
@@ -166,18 +155,12 @@
                                     <constraint firstAttribute="bottom" secondItem="9FF-oa-OAn" secondAttribute="bottom" constant="8" id="ANB-xz-mvy"/>
                                     <constraint firstItem="Xou-I5-MBA" firstAttribute="top" secondItem="t70-QT-ujt" secondAttribute="bottom" constant="55" id="DHH-OY-sBp"/>
                                     <constraint firstItem="9FF-oa-OAn" firstAttribute="top" secondItem="Xou-I5-MBA" secondAttribute="bottom" constant="10" id="LxG-M2-HkZ"/>
-                                    <constraint firstAttribute="height" constant="449" id="R8q-pE-2vN"/>
                                     <constraint firstAttribute="centerY" secondItem="t70-QT-ujt" secondAttribute="centerY" constant="32" id="SOA-ht-aqK"/>
                                     <constraint firstAttribute="centerX" secondItem="Xou-I5-MBA" secondAttribute="centerX" id="Xvu-Gd-Dxd"/>
                                     <constraint firstAttribute="trailing" secondItem="UOe-3r-PDf" secondAttribute="trailing" constant="8" id="YuY-kB-YmJ"/>
                                     <constraint firstAttribute="centerX" secondItem="t70-QT-ujt" secondAttribute="centerX" constant="-0.5" id="hBP-TE-v1z"/>
                                     <constraint firstItem="UOe-3r-PDf" firstAttribute="top" secondItem="0gy-Rr-yxa" secondAttribute="top" constant="35" id="owP-E7-HYw"/>
                                 </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="R8q-pE-2vN"/>
-                                    </mask>
-                                </variation>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="mw3-FS-Byh" appends="YES" id="dIP-XH-rwN"/>
                                     <outletCollection property="gestureRecognizers" destination="EVo-xk-xB4" appends="YES" id="fcf-2c-jDq"/>
@@ -207,7 +190,6 @@
                         </subviews>
                         <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="nvh-GF-1yK" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="18" id="3mk-Hi-tku"/>
                             <constraint firstItem="uzE-jo-efK" firstAttribute="top" secondItem="hPF-f0-86U" secondAttribute="bottom" constant="-41" id="50F-Fr-ipc"/>
                             <constraint firstItem="bFg-q4-Tq2" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" constant="-220" id="AQj-AQ-f36"/>
                             <constraint firstItem="hPF-f0-86U" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="F41-Po-Qrh"/>
@@ -215,7 +197,6 @@
                             <constraint firstItem="bFg-q4-Tq2" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="Hqz-GW-TdX"/>
                             <constraint firstItem="ccz-1q-Ho5" firstAttribute="top" secondItem="hPF-f0-86U" secondAttribute="bottom" constant="8" id="HyH-iH-IqL"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="bFg-q4-Tq2" secondAttribute="bottom" constant="251" id="Mj2-9s-mGX"/>
-                            <constraint firstItem="uzE-jo-efK" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="18" id="NfL-yr-CVL"/>
                             <constraint firstAttribute="trailingMargin" secondItem="d6j-Rb-gBB" secondAttribute="trailing" constant="13" id="Pjm-kf-ZHl"/>
                             <constraint firstItem="ccz-1q-Ho5" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="R0U-io-1RP"/>
                             <constraint firstItem="Vn9-2f-3ua" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="Sdu-uE-6sq"/>
@@ -224,29 +205,15 @@
                             <constraint firstAttribute="trailingMargin" secondItem="nvh-GF-1yK" secondAttribute="trailing" constant="13" id="Xdj-qV-Y8c"/>
                             <constraint firstAttribute="trailingMargin" secondItem="uzE-jo-efK" secondAttribute="trailing" constant="13" id="YSP-gU-gKC"/>
                             <constraint firstItem="d6j-Rb-gBB" firstAttribute="top" secondItem="ccz-1q-Ho5" secondAttribute="bottom" constant="-41" id="ZSi-QH-Oh9"/>
-                            <constraint firstItem="d6j-Rb-gBB" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="18" id="kCi-a0-s9l"/>
-                            <constraint firstItem="0gy-Rr-yxa" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" constant="-14" id="liP-hA-ihq"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="ccz-1q-Ho5" secondAttribute="bottom" constant="27" id="nNy-g7-tEh"/>
                             <constraint firstItem="Vn9-2f-3ua" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="oHC-9l-2uW"/>
                             <constraint firstAttribute="trailingMargin" secondItem="0gy-Rr-yxa" secondAttribute="trailing" constant="-16" id="pvt-JH-rOd"/>
-                            <constraint firstItem="0gy-Rr-yxa" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="qG5-dl-tgq"/>
                             <constraint firstAttribute="trailingMargin" secondItem="bFg-q4-Tq2" secondAttribute="trailing" constant="-16" id="uEF-V4-feD"/>
                             <constraint firstItem="hPF-f0-86U" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="vZU-EA-TCD"/>
                             <constraint firstItem="ccz-1q-Ho5" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="vaO-MF-zpB"/>
                             <constraint firstItem="hPF-f0-86U" firstAttribute="top" secondItem="Vn9-2f-3ua" secondAttribute="bottom" constant="8" id="vtS-9o-cIF"/>
                             <constraint firstItem="0gy-Rr-yxa" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="wcT-Mu-ku6"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="0gy-Rr-yxa" secondAttribute="trailing" constant="-16" id="xqE-GQ-i8i"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="liP-hA-ihq"/>
-                                <exclude reference="qG5-dl-tgq"/>
-                                <exclude reference="xqE-GQ-i8i"/>
-                                <exclude reference="3mk-Hi-tku"/>
-                                <exclude reference="NfL-yr-CVL"/>
-                                <exclude reference="kCi-a0-s9l"/>
-                            </mask>
-                        </variation>
                     </view>
                     <connections>
                         <outlet property="backGroundImg" destination="bFg-q4-Tq2" id="Vxs-yg-gxd"/>
@@ -271,7 +238,7 @@
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="501" y="585"/>
+            <point key="canvasLocation" x="501" y="584.99999999999989"/>
         </scene>
         <!--Exercício 1-->
         <scene sceneID="AaF-lA-Cgt">
@@ -301,7 +268,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5lv-QB-kuM" customClass="RFButton" customModule="Dislexy" customModuleProvider="target">
-                                                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                                    <rect key="frame" x="562" y="19" width="30" height="30"/>
                                                     <color key="backgroundColor" red="0.094117647060000004" green="0.70980392160000005" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="30" id="aNy-gN-Y1b"/>
@@ -317,51 +284,15 @@
                                                             <real key="value" value="15"/>
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
-                                                    <variation key="default">
-                                                        <mask key="constraints">
-                                                            <exclude reference="aNy-gN-Y1b"/>
-                                                            <exclude reference="hNh-3h-jRh"/>
-                                                        </mask>
-                                                    </variation>
-                                                    <variation key="heightClass=regular">
-                                                        <mask key="constraints">
-                                                            <include reference="aNy-gN-Y1b"/>
-                                                            <include reference="hNh-3h-jRh"/>
-                                                        </mask>
-                                                    </variation>
                                                 </button>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="centerX" secondItem="WTW-so-aG1" secondAttribute="centerX" id="3YD-65-ibh"/>
                                                 <constraint firstAttribute="centerY" secondItem="WTW-so-aG1" secondAttribute="centerY" id="PN3-vR-DNK"/>
                                                 <constraint firstItem="5lv-QB-kuM" firstAttribute="trailing" secondItem="sc4-7D-rfY" secondAttribute="trailingMargin" id="bqV-sY-DR4"/>
-                                                <constraint firstItem="5lv-QB-kuM" firstAttribute="top" secondItem="sc4-7D-rfY" secondAttribute="topMargin" constant="20" id="gHH-A8-6in">
-                                                    <variation key="heightClass=regular" constant="11"/>
-                                                </constraint>
-                                                <constraint firstItem="5lv-QB-kuM" firstAttribute="top" secondItem="sc4-7D-rfY" secondAttribute="topMargin" constant="20" id="wpv-TT-OMr">
-                                                    <variation key="heightClass=regular" constant="11"/>
-                                                </constraint>
+                                                <constraint firstItem="5lv-QB-kuM" firstAttribute="top" secondItem="sc4-7D-rfY" secondAttribute="topMargin" constant="11" id="gHH-A8-6in"/>
+                                                <constraint firstItem="5lv-QB-kuM" firstAttribute="top" secondItem="sc4-7D-rfY" secondAttribute="topMargin" constant="11" id="wpv-TT-OMr"/>
                                             </constraints>
-                                            <variation key="default">
-                                                <mask key="subviews">
-                                                    <exclude reference="5lv-QB-kuM"/>
-                                                </mask>
-                                                <mask key="constraints">
-                                                    <exclude reference="bqV-sY-DR4"/>
-                                                    <exclude reference="gHH-A8-6in"/>
-                                                    <exclude reference="wpv-TT-OMr"/>
-                                                </mask>
-                                            </variation>
-                                            <variation key="heightClass=regular">
-                                                <mask key="subviews">
-                                                    <include reference="5lv-QB-kuM"/>
-                                                </mask>
-                                                <mask key="constraints">
-                                                    <include reference="bqV-sY-DR4"/>
-                                                    <include reference="gHH-A8-6in"/>
-                                                    <include reference="wpv-TT-OMr"/>
-                                                </mask>
-                                            </variation>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
                                         <gestureRecognizers/>
@@ -572,14 +503,14 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2219" y="585"/>
+            <point key="canvasLocation" x="2219" y="584.99999999999989"/>
         </scene>
         <!--Info-->
         <scene sceneID="Ric-rv-6NX">
             <objects>
                 <tableViewController id="md2-a2-t72" customClass="AboutTableViewController" customModule="Dislexy" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="rqX-Ku-sae">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="sectionIndexBackgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
@@ -761,7 +692,7 @@ A Dislexia é um transtorno de linguagem que compromete a capacidade de ler, esc
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="99o-ao-RAz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2219" y="-127"/>
+            <point key="canvasLocation" x="2219" y="-126.99999999999999"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="0aq-bG-6Q6">
@@ -795,7 +726,7 @@ A Dislexia é um transtorno de linguagem que compromete a capacidade de ler, esc
                         <viewControllerLayoutGuide type="bottom" id="i5y-Ii-Yo7"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="7CM-T5-pUK">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="RPf-hC-0vd">
@@ -815,7 +746,7 @@ A Dislexia é um transtorno de linguagem que compromete a capacidade de ler, esc
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y2X-gB-zYn">
                                         <rect key="frame" x="137" y="54" width="295" height="175"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bcE-ph-oUA" customClass="RFButton" customModule="Dislexy" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bcE-ph-oUA" customClass="RFButton" customModule="Dislexy" customModuleProvider="target">
                                                 <rect key="frame" x="60" y="92" width="175" height="50"/>
                                                 <color key="backgroundColor" red="0.094117647060000004" green="0.70980392160000005" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
@@ -831,26 +762,15 @@ A Dislexia é um transtorno de linguagem que compromete a capacidade de ler, esc
                                                         <real key="value" value="25"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
-                                                <variation key="default">
-                                                    <mask key="constraints">
-                                                        <exclude reference="cgd-Ft-jMq"/>
-                                                    </mask>
-                                                </variation>
-                                                <variation key="heightClass=regular">
-                                                    <mask key="constraints">
-                                                        <include reference="cgd-Ft-jMq"/>
-                                                    </mask>
-                                                </variation>
                                                 <connections>
                                                     <action selector="botao2:" destination="ucS-q7-Jq8" eventType="touchUpInside" id="BtV-1u-46Z"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dmz-ho-ePD" customClass="RFButton" customModule="Dislexy" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dmz-ho-ePD" customClass="RFButton" customModule="Dislexy" customModuleProvider="target">
                                                 <rect key="frame" x="60" y="34" width="175" height="50"/>
                                                 <color key="backgroundColor" red="0.094117647060000004" green="0.70980392160000005" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="6b0-kC-ItN"/>
-                                                    <constraint firstAttribute="width" constant="175" id="x77-eK-ulZ"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Oduda-Bold" family="Oduda" pointSize="25"/>
                                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -862,18 +782,6 @@ A Dislexia é um transtorno de linguagem que compromete a capacidade de ler, esc
                                                         <real key="value" value="25"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
-                                                <variation key="default">
-                                                    <mask key="constraints">
-                                                        <exclude reference="6b0-kC-ItN"/>
-                                                        <exclude reference="x77-eK-ulZ"/>
-                                                    </mask>
-                                                </variation>
-                                                <variation key="heightClass=regular">
-                                                    <mask key="constraints">
-                                                        <include reference="6b0-kC-ItN"/>
-                                                        <exclude reference="x77-eK-ulZ"/>
-                                                    </mask>
-                                                </variation>
                                                 <connections>
                                                     <action selector="botao1:" destination="ucS-q7-Jq8" eventType="touchUpInside" id="dcQ-Yc-pwJ"/>
                                                 </connections>
@@ -882,39 +790,13 @@ A Dislexia é um transtorno de linguagem que compromete a capacidade de ler, esc
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="bcE-ph-oUA" secondAttribute="trailing" constant="60" id="Bbo-lj-t4T"/>
                                             <constraint firstItem="dmz-ho-ePD" firstAttribute="top" secondItem="Y2X-gB-zYn" secondAttribute="top" constant="34" id="IqZ-NN-pRg"/>
-                                            <constraint firstAttribute="centerY" secondItem="dmz-ho-ePD" secondAttribute="centerY" constant="28.5" id="MGx-pa-TWl"/>
-                                            <constraint firstItem="bcE-ph-oUA" firstAttribute="leading" secondItem="dmz-ho-ePD" secondAttribute="trailing" constant="-175" id="W1t-Jr-ZSM">
-                                                <variation key="heightClass=regular" constant="60"/>
-                                            </constraint>
-                                            <constraint firstItem="bcE-ph-oUA" firstAttribute="leading" secondItem="dmz-ho-ePD" secondAttribute="trailing" constant="-175" id="Z9x-vk-UjG"/>
                                             <constraint firstAttribute="bottom" secondItem="bcE-ph-oUA" secondAttribute="bottom" constant="33" id="aU4-Rl-d9D"/>
                                             <constraint firstAttribute="width" constant="295" id="ag1-6v-fLa"/>
                                             <constraint firstAttribute="height" constant="175" id="exC-wX-4Wy"/>
-                                            <constraint firstAttribute="centerY" secondItem="bcE-ph-oUA" secondAttribute="centerY" constant="-29.5" id="kdu-0G-gNL"/>
                                             <constraint firstAttribute="trailing" secondItem="dmz-ho-ePD" secondAttribute="trailing" constant="60" id="m1i-92-6HK"/>
                                             <constraint firstItem="dmz-ho-ePD" firstAttribute="leading" secondItem="Y2X-gB-zYn" secondAttribute="leading" constant="60" id="uEi-Tn-ZU3"/>
                                             <constraint firstItem="bcE-ph-oUA" firstAttribute="leading" secondItem="Y2X-gB-zYn" secondAttribute="leading" constant="60" id="yOH-gJ-aDl"/>
                                         </constraints>
-                                        <variation key="default">
-                                            <mask key="constraints">
-                                                <exclude reference="IqZ-NN-pRg"/>
-                                                <exclude reference="m1i-92-6HK"/>
-                                                <exclude reference="aU4-Rl-d9D"/>
-                                                <exclude reference="yOH-gJ-aDl"/>
-                                            </mask>
-                                        </variation>
-                                        <variation key="heightClass=regular">
-                                            <mask key="constraints">
-                                                <include reference="IqZ-NN-pRg"/>
-                                                <exclude reference="MGx-pa-TWl"/>
-                                                <include reference="m1i-92-6HK"/>
-                                                <exclude reference="W1t-Jr-ZSM"/>
-                                                <exclude reference="Z9x-vk-UjG"/>
-                                                <include reference="aU4-Rl-d9D"/>
-                                                <exclude reference="kdu-0G-gNL"/>
-                                                <include reference="yOH-gJ-aDl"/>
-                                            </mask>
-                                        </variation>
                                     </view>
                                 </subviews>
                                 <constraints>
@@ -923,7 +805,7 @@ A Dislexia é um transtorno de linguagem que compromete a capacidade de ler, esc
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2dq-Rh-0Dt" customClass="RFButton" customModule="Dislexy" customModuleProvider="target">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <rect key="frame" x="554" y="20" width="30" height="30"/>
                                 <color key="backgroundColor" red="0.094117647060000004" green="0.70980392160000005" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="EPu-dN-aaC"/>
@@ -939,18 +821,6 @@ A Dislexia é um transtorno de linguagem que compromete a capacidade de ler, esc
                                         <real key="value" value="15"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="EPu-dN-aaC"/>
-                                        <exclude reference="VoD-xb-q0z"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular">
-                                    <mask key="constraints">
-                                        <include reference="EPu-dN-aaC"/>
-                                        <include reference="VoD-xb-q0z"/>
-                                    </mask>
-                                </variation>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
@@ -961,29 +831,9 @@ A Dislexia é um transtorno de linguagem que compromete a capacidade de ler, esc
                             <constraint firstItem="i5y-Ii-Yo7" firstAttribute="top" secondItem="T31-4y-81F" secondAttribute="bottom" constant="13" id="eWT-cZ-trj"/>
                             <constraint firstItem="T31-4y-81F" firstAttribute="top" secondItem="RPf-hC-0vd" secondAttribute="bottom" constant="-28" id="jpq-xT-1pv"/>
                             <constraint firstAttribute="centerX" secondItem="RPf-hC-0vd" secondAttribute="centerX" constant="-0.5" id="lMu-WT-XDs"/>
-                            <constraint firstItem="2dq-Rh-0Dt" firstAttribute="top" secondItem="7Hv-7Q-E4k" secondAttribute="bottom" constant="8" id="sdc-ge-bPX">
-                                <variation key="heightClass=regular" constant="20"/>
-                            </constraint>
+                            <constraint firstItem="2dq-Rh-0Dt" firstAttribute="top" secondItem="7Hv-7Q-E4k" secondAttribute="bottom" constant="20" id="sdc-ge-bPX"/>
                             <constraint firstItem="T31-4y-81F" firstAttribute="leading" secondItem="7CM-T5-pUK" secondAttribute="leadingMargin" id="xXB-ys-jsF"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="2dq-Rh-0Dt"/>
-                            </mask>
-                            <mask key="constraints">
-                                <exclude reference="8Ww-pg-5Z0"/>
-                                <exclude reference="sdc-ge-bPX"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=regular">
-                            <mask key="subviews">
-                                <include reference="2dq-Rh-0Dt"/>
-                            </mask>
-                            <mask key="constraints">
-                                <include reference="8Ww-pg-5Z0"/>
-                                <include reference="sdc-ge-bPX"/>
-                            </mask>
-                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Exercício 2" id="6kQ-h5-qBf">
                         <barButtonItem key="leftBarButtonItem" image="fechar1x" id="bkV-Ks-Vru">
@@ -1001,7 +851,7 @@ A Dislexia é um transtorno de linguagem que compromete a capacidade de ler, esc
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xd8-OG-cO3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2172" y="1329"/>
+            <point key="canvasLocation" x="2172" y="1328.9999999999998"/>
         </scene>
         <!--Exercício 3-->
         <scene sceneID="gbH-DH-NMe">
@@ -1012,7 +862,7 @@ A Dislexia é um transtorno de linguagem que compromete a capacidade de ler, esc
                         <viewControllerLayoutGuide type="bottom" id="oa0-sn-uUf"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8Sk-bV-0vP">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tlg-9r-g1i" customClass="RFButton" customModule="Dislexy" customModuleProvider="target">
@@ -1036,7 +886,7 @@ A Dislexia é um transtorno de linguagem que compromete a capacidade de ler, esc
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tch-Gn-NmN" customClass="RFButton" customModule="Dislexy" customModuleProvider="target">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <rect key="frame" x="554" y="20" width="30" height="30"/>
                                 <color key="backgroundColor" red="0.094117647060000004" green="0.70980392160000005" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="30" id="IKu-Jp-XgY"/>
@@ -1052,49 +902,15 @@ A Dislexia é um transtorno de linguagem que compromete a capacidade de ler, esc
                                         <real key="value" value="15"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="IKu-Jp-XgY"/>
-                                        <exclude reference="mNB-TZ-qJO"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular">
-                                    <mask key="constraints">
-                                        <include reference="IKu-Jp-XgY"/>
-                                        <include reference="mNB-TZ-qJO"/>
-                                    </mask>
-                                </variation>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="tch-Gn-NmN" firstAttribute="trailing" secondItem="8Sk-bV-0vP" secondAttribute="trailingMargin" id="6rd-fH-yc3"/>
-                            <constraint firstAttribute="centerX" secondItem="tlg-9r-g1i" secondAttribute="centerX" id="Sk7-Dk-QEQ"/>
                             <constraint firstItem="tch-Gn-NmN" firstAttribute="top" secondItem="Akf-ZT-vyW" secondAttribute="bottom" constant="20" id="b2P-Wy-ppz"/>
-                            <constraint firstItem="oa0-sn-uUf" firstAttribute="top" secondItem="tlg-9r-g1i" secondAttribute="bottom" constant="48" id="gDJ-9q-mbq"/>
                             <constraint firstAttribute="centerX" secondItem="tlg-9r-g1i" secondAttribute="centerX" id="m4J-1V-0CN"/>
                             <constraint firstItem="oa0-sn-uUf" firstAttribute="top" secondItem="tlg-9r-g1i" secondAttribute="bottom" constant="23" id="q3O-VH-aef"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="tch-Gn-NmN"/>
-                            </mask>
-                            <mask key="constraints">
-                                <exclude reference="6rd-fH-yc3"/>
-                                <exclude reference="b2P-Wy-ppz"/>
-                                <exclude reference="Sk7-Dk-QEQ"/>
-                                <exclude reference="gDJ-9q-mbq"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=regular">
-                            <mask key="subviews">
-                                <include reference="tch-Gn-NmN"/>
-                            </mask>
-                            <mask key="constraints">
-                                <include reference="6rd-fH-yc3"/>
-                                <include reference="b2P-Wy-ppz"/>
-                            </mask>
-                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Exercício 3" id="1pM-PZ-dcA">
                         <barButtonItem key="leftBarButtonItem" image="fechar1x" id="N8N-ZJ-587">
@@ -1110,7 +926,7 @@ A Dislexia é um transtorno de linguagem que compromete a capacidade de ler, esc
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hij-tM-eMJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2172" y="2075"/>
+            <point key="canvasLocation" x="2172" y="2074.9999999999995"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="HJl-7M-xzk">
@@ -1132,7 +948,7 @@ A Dislexia é um transtorno de linguagem que compromete a capacidade de ler, esc
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AOE-TY-PV4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1360" y="1329"/>
+            <point key="canvasLocation" x="1360" y="1328.9999999999998"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="s78-ML-Xcj">
@@ -1154,7 +970,7 @@ A Dislexia é um transtorno de linguagem que compromete a capacidade de ler, esc
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="psK-1V-BTH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1360" y="2075"/>
+            <point key="canvasLocation" x="1360" y="2074.9999999999995"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="NJ9-Xy-4BK">
@@ -1177,7 +993,7 @@ A Dislexia é um transtorno de linguagem que compromete a capacidade de ler, esc
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LDm-5H-k3T" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1360" y="-127"/>
+            <point key="canvasLocation" x="1360" y="-126.99999999999999"/>
         </scene>
     </scenes>
     <resources>
