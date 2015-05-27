@@ -123,7 +123,7 @@ class Exercicio3ViewController: UIViewController {
         
         
         if (jogadas == 3) {
-            var sucessTitle = "Parábens"
+            var sucessTitle = "Parabéns"
             var subtitle = String()
             
             subtitle = "Continue sempre praticando :)"
@@ -131,13 +131,13 @@ class Exercicio3ViewController: UIViewController {
             let alert = SCLAlertView()
             
             
-            alert.addButton("Jogar novamente", action: { () -> Void in
+            alert.addButton("Tentar novamente", action: { () -> Void in
                 alert.hideView()
                 self.shoeLevelMenu()
                 self.jogadas = 0
             })
             
-            alert.addButton("Sair do exercício", action: { () -> Void in
+            alert.addButton("Sair", action: { () -> Void in
                 alert.hideView()
                 self.sair()
             })

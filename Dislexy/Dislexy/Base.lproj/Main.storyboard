@@ -138,7 +138,7 @@
                                             <segue destination="Mcu-iO-Lvc" kind="show" id="lXW-eD-G6v"/>
                                         </connections>
                                     </button>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Xou-I5-MBA">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Xou-I5-MBA">
                                         <rect key="frame" x="180" y="235" width="240" height="59"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="240" id="5vE-kr-4To"/>
@@ -300,11 +300,68 @@
                                                     <color key="textColor" red="0.094117647060000004" green="0.70980392160000005" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5lv-QB-kuM" customClass="RFButton" customModule="Dislexy" customModuleProvider="target">
+                                                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                                    <color key="backgroundColor" red="0.094117647060000004" green="0.70980392160000005" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="30" id="aNy-gN-Y1b"/>
+                                                        <constraint firstAttribute="height" constant="30" id="hNh-3h-jRh"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                    <state key="normal" title="?">
+                                                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="15"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="aNy-gN-Y1b"/>
+                                                            <exclude reference="hNh-3h-jRh"/>
+                                                        </mask>
+                                                    </variation>
+                                                    <variation key="heightClass=regular">
+                                                        <mask key="constraints">
+                                                            <include reference="aNy-gN-Y1b"/>
+                                                            <include reference="hNh-3h-jRh"/>
+                                                        </mask>
+                                                    </variation>
+                                                </button>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="centerX" secondItem="WTW-so-aG1" secondAttribute="centerX" id="3YD-65-ibh"/>
                                                 <constraint firstAttribute="centerY" secondItem="WTW-so-aG1" secondAttribute="centerY" id="PN3-vR-DNK"/>
+                                                <constraint firstItem="5lv-QB-kuM" firstAttribute="trailing" secondItem="sc4-7D-rfY" secondAttribute="trailingMargin" id="bqV-sY-DR4"/>
+                                                <constraint firstItem="5lv-QB-kuM" firstAttribute="top" secondItem="sc4-7D-rfY" secondAttribute="topMargin" constant="20" id="gHH-A8-6in">
+                                                    <variation key="heightClass=regular" constant="11"/>
+                                                </constraint>
+                                                <constraint firstItem="5lv-QB-kuM" firstAttribute="top" secondItem="sc4-7D-rfY" secondAttribute="topMargin" constant="20" id="wpv-TT-OMr">
+                                                    <variation key="heightClass=regular" constant="11"/>
+                                                </constraint>
                                             </constraints>
+                                            <variation key="default">
+                                                <mask key="subviews">
+                                                    <exclude reference="5lv-QB-kuM"/>
+                                                </mask>
+                                                <mask key="constraints">
+                                                    <exclude reference="bqV-sY-DR4"/>
+                                                    <exclude reference="gHH-A8-6in"/>
+                                                    <exclude reference="wpv-TT-OMr"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="heightClass=regular">
+                                                <mask key="subviews">
+                                                    <include reference="5lv-QB-kuM"/>
+                                                </mask>
+                                                <mask key="constraints">
+                                                    <include reference="bqV-sY-DR4"/>
+                                                    <include reference="gHH-A8-6in"/>
+                                                    <include reference="wpv-TT-OMr"/>
+                                                </mask>
+                                            </variation>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
                                         <gestureRecognizers/>
@@ -521,7 +578,7 @@
         <scene sceneID="Ric-rv-6NX">
             <objects>
                 <tableViewController id="md2-a2-t72" customClass="AboutTableViewController" customModule="Dislexy" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="rqX-Ku-sae">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="rqX-Ku-sae">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -545,8 +602,9 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="esj-FO-TBy">
-                                                    <rect key="frame" x="8" y="51" width="584" height="151"/>
-                                                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</string>
+                                                    <rect key="frame" x="8" y="51" width="584" height="180"/>
+                                                    <string key="text">Você sabe o que é Dislexia?
+A Dislexia é um transtorno de linguagem que compromete a capacidade de ler, escrever e compreender textos de aproximadamente 4% da população mundial. O dyslexicbuddy foi criado para ajudar crianças com este transtorno a superar suas dificuldades de aprendizado. O App disponibiliza exercícios simples que, com o tempo e prática, melhoram a capacidade de  </string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
@@ -557,7 +615,7 @@
                                                 <constraint firstItem="CCg-Ck-7pS" firstAttribute="leading" secondItem="4tM-FG-yny" secondAttribute="leadingMargin" id="Kab-EY-NbY"/>
                                                 <constraint firstItem="esj-FO-TBy" firstAttribute="leading" secondItem="4tM-FG-yny" secondAttribute="leadingMargin" id="YAB-l5-lHj"/>
                                                 <constraint firstItem="CCg-Ck-7pS" firstAttribute="top" secondItem="4tM-FG-yny" secondAttribute="topMargin" constant="9" id="b1j-GI-hBW"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="esj-FO-TBy" secondAttribute="bottom" constant="28.5" id="mhb-Hz-VEa"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="esj-FO-TBy" secondAttribute="bottom" id="mhb-Hz-VEa"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
@@ -636,11 +694,36 @@
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Designer)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ATl-IS-jiR">
+                                                    <rect key="frame" x="316" y="212" width="148" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="D0w-wx-na5"/>
+                                                        <constraint firstAttribute="width" constant="148" id="eD4-aT-A0o"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Programador)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fDx-MM-tsG">
+                                                    <rect key="frame" x="136" y="212" width="148" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="Jpt-1q-TPi"/>
+                                                        <constraint firstAttribute="width" constant="148" id="lCF-Ps-8q0"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="kcA-Xf-ubZ" firstAttribute="top" secondItem="qZq-Ls-DrO" secondAttribute="bottom" constant="41" id="3QF-WE-fvT"/>
                                                 <constraint firstItem="uxP-V7-Uww" firstAttribute="leading" secondItem="6pf-5H-1P2" secondAttribute="trailing" constant="45" id="3gg-pT-GgQ"/>
+                                                <constraint firstItem="fDx-MM-tsG" firstAttribute="trailing" secondItem="6pf-5H-1P2" secondAttribute="trailing" id="49B-vq-dmD"/>
                                                 <constraint firstAttribute="centerY" secondItem="12p-Hr-nMj" secondAttribute="centerY" constant="259.75" id="4WL-7v-wnU"/>
+                                                <constraint firstItem="ATl-IS-jiR" firstAttribute="top" secondItem="uxP-V7-Uww" secondAttribute="bottom" constant="-8" id="5Km-SW-I9I"/>
+                                                <constraint firstItem="fDx-MM-tsG" firstAttribute="leading" secondItem="6pf-5H-1P2" secondAttribute="leading" id="5x2-L4-AlY"/>
+                                                <constraint firstItem="fDx-MM-tsG" firstAttribute="top" secondItem="12p-Hr-nMj" secondAttribute="bottom" constant="22" id="6rl-db-xf6"/>
+                                                <constraint firstItem="ATl-IS-jiR" firstAttribute="leading" secondItem="fDx-MM-tsG" secondAttribute="trailing" constant="32" id="A5L-6f-4eG"/>
                                                 <constraint firstAttribute="centerY" secondItem="kcA-Xf-ubZ" secondAttribute="centerY" constant="259.75" id="AOk-hu-DhR"/>
                                                 <constraint firstAttribute="centerX" secondItem="uxP-V7-Uww" secondAttribute="centerX" constant="-90.5" id="HN5-Oc-oCs"/>
                                                 <constraint firstAttribute="centerX" secondItem="6pf-5H-1P2" secondAttribute="centerX" constant="90" id="Icc-mm-38n"/>
@@ -654,6 +737,7 @@
                                                 <constraint firstAttribute="centerX" secondItem="12p-Hr-nMj" secondAttribute="centerX" constant="90" id="qIz-Jc-SVZ"/>
                                                 <constraint firstItem="6pf-5H-1P2" firstAttribute="top" secondItem="12p-Hr-nMj" secondAttribute="bottom" constant="9" id="tVm-oh-xkG"/>
                                                 <constraint firstAttribute="centerY" secondItem="uxP-V7-Uww" secondAttribute="centerY" constant="190.5" id="x3i-9Y-Gsp"/>
+                                                <constraint firstItem="fDx-MM-tsG" firstAttribute="top" secondItem="6pf-5H-1P2" secondAttribute="bottom" constant="-8" id="yVx-hJ-vjy"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
@@ -734,6 +818,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bcE-ph-oUA" customClass="RFButton" customModule="Dislexy" customModuleProvider="target">
                                                 <rect key="frame" x="60" y="92" width="175" height="50"/>
                                                 <color key="backgroundColor" red="0.094117647060000004" green="0.70980392160000005" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="cgd-Ft-jMq"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" name="Oduda-Bold" family="Oduda" pointSize="25"/>
                                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <state key="normal" title="BTN2">
@@ -744,6 +831,16 @@
                                                         <real key="value" value="25"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="cgd-Ft-jMq"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="heightClass=regular">
+                                                    <mask key="constraints">
+                                                        <include reference="cgd-Ft-jMq"/>
+                                                    </mask>
+                                                </variation>
                                                 <connections>
                                                     <action selector="botao2:" destination="ucS-q7-Jq8" eventType="touchUpInside" id="BtV-1u-46Z"/>
                                                 </connections>
@@ -751,6 +848,10 @@
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dmz-ho-ePD" customClass="RFButton" customModule="Dislexy" customModuleProvider="target">
                                                 <rect key="frame" x="60" y="34" width="175" height="50"/>
                                                 <color key="backgroundColor" red="0.094117647060000004" green="0.70980392160000005" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="6b0-kC-ItN"/>
+                                                    <constraint firstAttribute="width" constant="175" id="x77-eK-ulZ"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" name="Oduda-Bold" family="Oduda" pointSize="25"/>
                                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <state key="normal" title="BTN1">
@@ -761,6 +862,18 @@
                                                         <real key="value" value="25"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="6b0-kC-ItN"/>
+                                                        <exclude reference="x77-eK-ulZ"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="heightClass=regular">
+                                                    <mask key="constraints">
+                                                        <include reference="6b0-kC-ItN"/>
+                                                        <exclude reference="x77-eK-ulZ"/>
+                                                    </mask>
+                                                </variation>
                                                 <connections>
                                                     <action selector="botao1:" destination="ucS-q7-Jq8" eventType="touchUpInside" id="dcQ-Yc-pwJ"/>
                                                 </connections>
@@ -768,14 +881,40 @@
                                         </subviews>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="bcE-ph-oUA" secondAttribute="trailing" constant="60" id="Bbo-lj-t4T"/>
+                                            <constraint firstItem="dmz-ho-ePD" firstAttribute="top" secondItem="Y2X-gB-zYn" secondAttribute="top" constant="34" id="IqZ-NN-pRg"/>
                                             <constraint firstAttribute="centerY" secondItem="dmz-ho-ePD" secondAttribute="centerY" constant="28.5" id="MGx-pa-TWl"/>
-                                            <constraint firstItem="bcE-ph-oUA" firstAttribute="leading" secondItem="dmz-ho-ePD" secondAttribute="trailing" constant="-175" id="W1t-Jr-ZSM"/>
+                                            <constraint firstItem="bcE-ph-oUA" firstAttribute="leading" secondItem="dmz-ho-ePD" secondAttribute="trailing" constant="-175" id="W1t-Jr-ZSM">
+                                                <variation key="heightClass=regular" constant="60"/>
+                                            </constraint>
                                             <constraint firstItem="bcE-ph-oUA" firstAttribute="leading" secondItem="dmz-ho-ePD" secondAttribute="trailing" constant="-175" id="Z9x-vk-UjG"/>
+                                            <constraint firstAttribute="bottom" secondItem="bcE-ph-oUA" secondAttribute="bottom" constant="33" id="aU4-Rl-d9D"/>
                                             <constraint firstAttribute="width" constant="295" id="ag1-6v-fLa"/>
                                             <constraint firstAttribute="height" constant="175" id="exC-wX-4Wy"/>
                                             <constraint firstAttribute="centerY" secondItem="bcE-ph-oUA" secondAttribute="centerY" constant="-29.5" id="kdu-0G-gNL"/>
+                                            <constraint firstAttribute="trailing" secondItem="dmz-ho-ePD" secondAttribute="trailing" constant="60" id="m1i-92-6HK"/>
                                             <constraint firstItem="dmz-ho-ePD" firstAttribute="leading" secondItem="Y2X-gB-zYn" secondAttribute="leading" constant="60" id="uEi-Tn-ZU3"/>
+                                            <constraint firstItem="bcE-ph-oUA" firstAttribute="leading" secondItem="Y2X-gB-zYn" secondAttribute="leading" constant="60" id="yOH-gJ-aDl"/>
                                         </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="IqZ-NN-pRg"/>
+                                                <exclude reference="m1i-92-6HK"/>
+                                                <exclude reference="aU4-Rl-d9D"/>
+                                                <exclude reference="yOH-gJ-aDl"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=regular">
+                                            <mask key="constraints">
+                                                <include reference="IqZ-NN-pRg"/>
+                                                <exclude reference="MGx-pa-TWl"/>
+                                                <include reference="m1i-92-6HK"/>
+                                                <exclude reference="W1t-Jr-ZSM"/>
+                                                <exclude reference="Z9x-vk-UjG"/>
+                                                <include reference="aU4-Rl-d9D"/>
+                                                <exclude reference="kdu-0G-gNL"/>
+                                                <include reference="yOH-gJ-aDl"/>
+                                            </mask>
+                                        </variation>
                                     </view>
                                 </subviews>
                                 <constraints>
@@ -783,16 +922,68 @@
                                     <constraint firstAttribute="centerX" secondItem="Y2X-gB-zYn" secondAttribute="centerX" id="vIH-9p-a9P"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2dq-Rh-0Dt" customClass="RFButton" customModule="Dislexy" customModuleProvider="target">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.094117647060000004" green="0.70980392160000005" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="EPu-dN-aaC"/>
+                                    <constraint firstAttribute="width" constant="30" id="VoD-xb-q0z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="?">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="EPu-dN-aaC"/>
+                                        <exclude reference="VoD-xb-q0z"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="EPu-dN-aaC"/>
+                                        <include reference="VoD-xb-q0z"/>
+                                    </mask>
+                                </variation>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="2dq-Rh-0Dt" firstAttribute="trailing" secondItem="7CM-T5-pUK" secondAttribute="trailingMargin" id="8Ww-pg-5Z0"/>
                             <constraint firstItem="T31-4y-81F" firstAttribute="trailing" secondItem="7CM-T5-pUK" secondAttribute="trailingMargin" id="KhW-6F-54B"/>
                             <constraint firstAttribute="centerY" secondItem="RPf-hC-0vd" secondAttribute="centerY" constant="102" id="eSh-gg-bcn"/>
                             <constraint firstItem="i5y-Ii-Yo7" firstAttribute="top" secondItem="T31-4y-81F" secondAttribute="bottom" constant="13" id="eWT-cZ-trj"/>
                             <constraint firstItem="T31-4y-81F" firstAttribute="top" secondItem="RPf-hC-0vd" secondAttribute="bottom" constant="-28" id="jpq-xT-1pv"/>
                             <constraint firstAttribute="centerX" secondItem="RPf-hC-0vd" secondAttribute="centerX" constant="-0.5" id="lMu-WT-XDs"/>
+                            <constraint firstItem="2dq-Rh-0Dt" firstAttribute="top" secondItem="7Hv-7Q-E4k" secondAttribute="bottom" constant="8" id="sdc-ge-bPX">
+                                <variation key="heightClass=regular" constant="20"/>
+                            </constraint>
                             <constraint firstItem="T31-4y-81F" firstAttribute="leading" secondItem="7CM-T5-pUK" secondAttribute="leadingMargin" id="xXB-ys-jsF"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="2dq-Rh-0Dt"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="8Ww-pg-5Z0"/>
+                                <exclude reference="sdc-ge-bPX"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular">
+                            <mask key="subviews">
+                                <include reference="2dq-Rh-0Dt"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="8Ww-pg-5Z0"/>
+                                <include reference="sdc-ge-bPX"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Exercício 2" id="6kQ-h5-qBf">
                         <barButtonItem key="leftBarButtonItem" image="fechar1x" id="bkV-Ks-Vru">
@@ -844,18 +1035,64 @@
                                     <action selector="DicaButton:" destination="wcR-Ie-JMd" eventType="touchUpInside" id="HpR-vO-mLT"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tch-Gn-NmN" customClass="RFButton" customModule="Dislexy" customModuleProvider="target">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.094117647060000004" green="0.70980392160000005" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="IKu-Jp-XgY"/>
+                                    <constraint firstAttribute="height" constant="30" id="mNB-TZ-qJO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="?">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="IKu-Jp-XgY"/>
+                                        <exclude reference="mNB-TZ-qJO"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="IKu-Jp-XgY"/>
+                                        <include reference="mNB-TZ-qJO"/>
+                                    </mask>
+                                </variation>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="tch-Gn-NmN" firstAttribute="trailing" secondItem="8Sk-bV-0vP" secondAttribute="trailingMargin" id="6rd-fH-yc3"/>
                             <constraint firstAttribute="centerX" secondItem="tlg-9r-g1i" secondAttribute="centerX" id="Sk7-Dk-QEQ"/>
+                            <constraint firstItem="tch-Gn-NmN" firstAttribute="top" secondItem="Akf-ZT-vyW" secondAttribute="bottom" constant="20" id="b2P-Wy-ppz"/>
                             <constraint firstItem="oa0-sn-uUf" firstAttribute="top" secondItem="tlg-9r-g1i" secondAttribute="bottom" constant="48" id="gDJ-9q-mbq"/>
                             <constraint firstAttribute="centerX" secondItem="tlg-9r-g1i" secondAttribute="centerX" id="m4J-1V-0CN"/>
                             <constraint firstItem="oa0-sn-uUf" firstAttribute="top" secondItem="tlg-9r-g1i" secondAttribute="bottom" constant="23" id="q3O-VH-aef"/>
                         </constraints>
                         <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="tch-Gn-NmN"/>
+                            </mask>
                             <mask key="constraints">
+                                <exclude reference="6rd-fH-yc3"/>
+                                <exclude reference="b2P-Wy-ppz"/>
                                 <exclude reference="Sk7-Dk-QEQ"/>
                                 <exclude reference="gDJ-9q-mbq"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular">
+                            <mask key="subviews">
+                                <include reference="tch-Gn-NmN"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="6rd-fH-yc3"/>
+                                <include reference="b2P-Wy-ppz"/>
                             </mask>
                         </variation>
                     </view>

@@ -28,7 +28,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var viewInvisivel: UIView!
     
     
-    let texto = ["Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, um","Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, dois","Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, tres"]
+    let texto = ["Forme quatro palavras novas com a inicial da palavra dada em cada rodada.","Escolha a palavra que melhor se encaixa nos espaços.","Arraste as letras para suas devidas posições para formar palavras."]
     
     override func viewDidLoad() {
         super.viewDidLoad()

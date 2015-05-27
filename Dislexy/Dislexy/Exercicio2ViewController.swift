@@ -19,12 +19,12 @@ class Exercicio2ViewController: UIViewController {
     @IBOutlet weak var btn2: UIButton!
     
     
-    var frases:[String] = ["Ontem Maria ia comprar um __________ de borracha.",
-        "No entanto, preferiu comprar um __________ de pelúcia porque era mais barato.",
-        "O pai deu-lhe um pouco mais de dinheiro para ela poder passear. Quando voltou para __________ e .. ",
-        " deitou-se em sua __________ , ficou pensando no pato que tinha deixado para trás.",
-        "Então teve uma ideia. Pensou voltar na loja no dia seguinte e comprar um pato e uma __________ .",
-        "No dia seguinte, entretanto, ficou de __________ aberta. Para sua tristeza, o pato e a pata já tinham sido vendidos."]
+    var frases:[String] = ["Ontem Maria ia comprar um _______ de borracha.",
+        "No entanto, preferiu comprar um _______ de pelúcia porque era mais barato.",
+        "O pai deu-lhe um pouco mais de dinheiro para ela poder passear. Quando voltou para _______ e... ",
+        " deitou-se em sua _______ , ficou pensando no pato que tinha deixado para trás.",
+        "Então teve uma ideia. Pensou voltar na loja no dia seguinte e comprar um pato e uma _______ .",
+        "No dia seguinte, entretanto, ficou de _______ aberta. Para sua tristeza, o pato e a pata já tinham sido vendidos."]
     
     var certo:[String] = ["pato","sapo","casa","cama","pata","boca"]
     
@@ -81,7 +81,7 @@ class Exercicio2ViewController: UIViewController {
             
             self.acertos = 0
 
-            alert.addButton("Jogar Novamente", target: alert, selector: "hideView")
+            alert.addButton("Tentar novamente", target: alert, selector: "hideView")
             
             alert.addButton("Sair", target: alert, selector: "hideView2")
             
