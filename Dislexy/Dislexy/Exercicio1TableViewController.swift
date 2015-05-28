@@ -170,6 +170,10 @@ class Exercicio1TableViewController: UITableViewController, UITextFieldDelegate 
         
     }
     
+    @IBAction func info(sender: AnyObject) {
+        
+        instruction()
+    }
     
     func iniciaJogo(){
         

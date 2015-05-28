@@ -283,6 +283,9 @@
                                                             <real key="value" value="15"/>
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="info:" destination="Igu-Do-WDs" eventType="touchUpInside" id="oPP-2P-mAa"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -820,6 +823,9 @@ A Dislexia é um transtorno de linguagem que compromete a capacidade de ler, esc
                                         <real key="value" value="15"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="info:" destination="ucS-q7-Jq8" eventType="touchUpInside" id="CUL-ac-o92"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
@@ -901,6 +907,9 @@ A Dislexia é um transtorno de linguagem que compromete a capacidade de ler, esc
                                         <real key="value" value="15"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="info:" destination="wcR-Ie-JMd" eventType="touchUpInside" id="uOA-GI-xcO"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
@@ -921,6 +930,7 @@ A Dislexia é um transtorno de linguagem que compromete a capacidade de ler, esc
                     </navigationItem>
                     <connections>
                         <outlet property="btnDica" destination="tlg-9r-g1i" id="F4l-kI-tY6"/>
+                        <outlet property="btnInfo" destination="tch-Gn-NmN" id="E3b-0x-4SL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hij-tM-eMJ" userLabel="First Responder" sceneMemberID="firstResponder"/>

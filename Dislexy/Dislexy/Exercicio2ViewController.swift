@@ -110,6 +110,11 @@ class Exercicio2ViewController: UIViewController {
         }
     }
     
+    @IBAction func info(sender: AnyObject) {
+        instruction()
+    }
+    
+    
     func alertIsGone() {
         rodaJogo()
         acertos = 0

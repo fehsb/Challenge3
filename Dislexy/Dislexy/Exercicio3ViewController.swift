@@ -18,6 +18,9 @@ class Exercicio3ViewController: UIViewController {
     
     @IBOutlet weak var btnDica: UIButton!
     
+    @IBOutlet weak var btnInfo: RFButton!
+    
+    
     required init(coder aDecoder: NSCoder) {
         controller = GameController()
         super.init(coder: aDecoder)
@@ -64,7 +67,7 @@ class Exercicio3ViewController: UIViewController {
         
         self.view.bringSubviewToFront(btnDica)
         
-        
+        self.view.bringSubviewToFront(btnInfo)
     }
     
     override func didReceiveMemoryWarning() {
@@ -86,6 +89,9 @@ class Exercicio3ViewController: UIViewController {
         
     }
     
+    @IBAction func info(sender: AnyObject) {
+        instruction()
+    }
     func shoeLevelMenu(){
         
         var sucessTitle = "Escolha o level:"
