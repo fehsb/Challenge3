@@ -5,16 +5,28 @@
 	<key>anagrams</key>
 	<array>
 		<array>
-			<string>hbona</string>
-			<string>banho</string>
+			<string>ovop</string>
+			<string>povo</string>
 		</array>
 		<array>
-			<string>rabco</string>
-			<string>barco</string>
+			<string>fbao</string>
+			<string>bafo</string>
 		</array>
 		<array>
-			<string>eqadu</string>
-			<string>queda</string>
+			<string>toab</string>
+			<string>bota</string>
+		</array>
+		<array>
+			<string>cbeo</string>
+			<string>beco</string>
+		</array>
+		<array>
+			<string>napo</string>
+			<string>pano</string>
+		</array>
+		<array>
+			<string>ablo</string>
+			<string>bola</string>
 		</array>
 		<array>
 			<string>otap</string>
@@ -23,10 +35,6 @@
 		<array>
 			<string>ocab</string>
 			<string>boca</string>
-		</array>
-		<array>
-			<string>seud</string>
-			<string>deus</string>
 		</array>
 		<array>
 			<string>oded</string>
