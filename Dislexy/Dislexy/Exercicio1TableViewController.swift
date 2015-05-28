@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Foundation
 
 class Exercicio1TableViewController: UITableViewController, UITextFieldDelegate {
     
@@ -21,6 +22,7 @@ class Exercicio1TableViewController: UITableViewController, UITextFieldDelegate 
     
     @IBOutlet weak var textField4: UITextField!
     
+    
     var palav:String = ""
     var acertos:Int = 0
     var jogadas:Int = 0
@@ -31,6 +33,10 @@ class Exercicio1TableViewController: UITableViewController, UITextFieldDelegate 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        textField1.tag = 0
+        textField2.tag = 1
+        textField3.tag = 2
+        textField3.tag = 3
         let defaults = NSUserDefaults.standardUserDefaults()
         var vez = defaults.valueForKey("ex1") as! Int
         if (vez == 0){
@@ -104,6 +110,7 @@ class Exercicio1TableViewController: UITableViewController, UITextFieldDelegate 
         
     }
     
+    
     func resignTextFields() {
         for t in [textField1, textField2, textField3, textField4] {
             if t.isFirstResponder() {
@@ -112,16 +119,49 @@ class Exercicio1TableViewController: UITableViewController, UITextFieldDelegate 
         }
     }
     
+    
     func textFieldShouldReturn(textField: UITextField) -> Bool {
-        self.view.endEditing(true)
+        
+        switch (textField){
+        case self.textField1 :
+            textField2.becomeFirstResponder()
+        break
+        case self.textField2 :
+            textField3.becomeFirstResponder()
+        break
+        case self.textField3:
+            textField4.becomeFirstResponder()
+        break
+        default :
+            textField.resignFirstResponder()
+        }
+
         return false
     }
     
+    
+    func consultarDic(palavra: String) -> Bool{
+        
+        if (count(palavra)<=2){
+            return false
+        }
+        var checker = UITextChecker()
+        var currentLocal = NSLocale(localeIdentifier: "pt_BR")
+        var currentLanguage:NSString = currentLocal.objectForKey(NSLocaleLanguageCode) as! String
+        var searchRange = NSMakeRange(0, count(palavra))
+        
+        var misspelledRange:NSRange = checker.rangeOfMisspelledWordInString(palavra, range: searchRange, startingAt: 0, wrap:false , language: currentLanguage as String)
+        
+        return misspelledRange.location == NSNotFound
+    }
+    
+    
     func verificaAcerto(){
+        
         
         let index = advance(palav.startIndex, 0)
         var letrinha = palav[index]
-        
+    
         var erros = 0
         
         let field1 = textField1.text
@@ -136,22 +176,28 @@ class Exercicio1TableViewController: UITableViewController, UITextFieldDelegate 
         let field4 = textField4.text
         let letra4 = field4[index]
         
-        if (letrinha != letra1){
-            erros++
-        }
-        if (letrinha != letra2){
-            erros++
-        }
-        if (letrinha != letra3){
-            erros++
-        }
-        if (letrinha != letra4){
-            erros++
-        }
-        
-        if (erros == 0){
-            acertos++}
+        if (consultarDic(field1) && consultarDic(field2) && consultarDic(field3) && consultarDic(field4)){
+            
+            
+            if (letrinha != letra1){
+                erros++
+            }
+            if (letrinha != letra2){
+                erros++
+            }
+            if (letrinha != letra3){
+                erros++
+            }
+            if (letrinha != letra4){
+                erros++
+            }
+            
+            if (erros == 0){
+                acertos++}
             iniciaJogo()
+        }else{
+            SCLAlertView().showNotice("ATENÇÃO", subTitle: "Existem palavras inválidas.")
+        }
     }
     
     
@@ -221,9 +267,9 @@ class Exercicio1TableViewController: UITableViewController, UITextFieldDelegate 
     func alertIsGone() {
         iniciaJogo()
     }
-
+    
     func alertIsGo() {
-
+        
     }
     
     func alertIsGone2() {

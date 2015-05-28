@@ -23,7 +23,6 @@
 		D401B8E81B05136B0021782F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D401B8E61B05136B0021782F /* Main.storyboard */; };
 		D401B8EA1B05136B0021782F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D401B8E91B05136B0021782F /* Images.xcassets */; };
 		D401B8ED1B05136B0021782F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D401B8EB1B05136B0021782F /* LaunchScreen.xib */; };
-		D401B8F91B05136B0021782F /* DislexyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D401B8F81B05136B0021782F /* DislexyTests.swift */; };
 		D4210A3D1B0E6897005A92CA /* level1.plist in Resources */ = {isa = PBXBuildFile; fileRef = D4210A3A1B0E6897005A92CA /* level1.plist */; };
 		D4210A3E1B0E6897005A92CA /* level2.plist in Resources */ = {isa = PBXBuildFile; fileRef = D4210A3B1B0E6897005A92CA /* level2.plist */; };
 		D4210A3F1B0E6897005A92CA /* level3.plist in Resources */ = {isa = PBXBuildFile; fileRef = D4210A3C1B0E6897005A92CA /* level3.plist */; };
@@ -52,16 +51,6 @@
 		D4C28AAC1B06B9880026DBBD /* SCLAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C28AAB1B06B9880026DBBD /* SCLAlertView.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		D401B8F31B05136B0021782F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D401B8D21B05136A0021782F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D401B8D91B05136A0021782F;
-			remoteInfo = Dislexy;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		CA108E2C1B08E73B0068B949 /* DesignableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
 		CA221CA31B14E59C00F773A6 /* AboutTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AboutTableViewController.swift; path = ../AboutTableViewController.swift; sourceTree = "<group>"; };
@@ -81,7 +70,6 @@
 		D401B8E71B05136B0021782F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D401B8E91B05136B0021782F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D401B8EC1B05136B0021782F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		D401B8F21B05136B0021782F /* DislexyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DislexyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D401B8F71B05136B0021782F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D401B8F81B05136B0021782F /* DislexyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DislexyTests.swift; sourceTree = "<group>"; };
 		D4210A3A1B0E6897005A92CA /* level1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = level1.plist; sourceTree = "<group>"; };
@@ -120,13 +108,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D401B8EF1B05136B0021782F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -143,7 +124,6 @@
 			isa = PBXGroup;
 			children = (
 				D401B8DA1B05136B0021782F /* Dislexy.app */,
-				D401B8F21B05136B0021782F /* DislexyTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -323,24 +303,6 @@
 			productReference = D401B8DA1B05136B0021782F /* Dislexy.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D401B8F11B05136B0021782F /* DislexyTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D401B8FF1B05136B0021782F /* Build configuration list for PBXNativeTarget "DislexyTests" */;
-			buildPhases = (
-				D401B8EE1B05136B0021782F /* Sources */,
-				D401B8EF1B05136B0021782F /* Frameworks */,
-				D401B8F01B05136B0021782F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D401B8F41B05136B0021782F /* PBXTargetDependency */,
-			);
-			name = DislexyTests;
-			productName = DislexyTests;
-			productReference = D401B8F21B05136B0021782F /* DislexyTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -352,11 +314,7 @@
 				TargetAttributes = {
 					D401B8D91B05136A0021782F = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = 6U45FT46QZ;
-					};
-					D401B8F11B05136B0021782F = {
-						CreatedOnToolsVersion = 6.3.1;
-						TestTargetID = D401B8D91B05136A0021782F;
+						DevelopmentTeam = 7ML66V3SWW;
 					};
 				};
 			};
@@ -374,7 +332,6 @@
 			projectRoot = "";
 			targets = (
 				D401B8D91B05136A0021782F /* Dislexy */,
-				D401B8F11B05136B0021782F /* DislexyTests */,
 			);
 		};
 /* End PBXProject section */
@@ -405,13 +362,6 @@
 				CABC1CF21B0FA63900725929 /* slot@2x.png in Resources */,
 				D4210A6F1B0E6A4B005A92CA /* Default@2x.png in Resources */,
 				CABC1CEC1B0FA1E100725929 /* tile@2x.png in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D401B8F01B05136B0021782F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,23 +396,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D401B8EE1B05136B0021782F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D401B8F91B05136B0021782F /* DislexyTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		D401B8F41B05136B0021782F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D401B8D91B05136A0021782F /* Dislexy */;
-			targetProxy = D401B8F31B05136B0021782F /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D401B8E61B05136B0021782F /* Main.storyboard */ = {
@@ -572,6 +506,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Dislexy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -586,44 +521,11 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Dislexy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		D401B9001B05136B0021782F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = DislexyTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dislexy.app/Dislexy";
-			};
-			name = Debug;
-		};
-		D401B9011B05136B0021782F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = DislexyTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dislexy.app/Dislexy";
 			};
 			name = Release;
 		};
@@ -644,15 +546,6 @@
 			buildConfigurations = (
 				D401B8FD1B05136B0021782F /* Debug */,
 				D401B8FE1B05136B0021782F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D401B8FF1B05136B0021782F /* Build configuration list for PBXNativeTarget "DislexyTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D401B9001B05136B0021782F /* Debug */,
-				D401B9011B05136B0021782F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
