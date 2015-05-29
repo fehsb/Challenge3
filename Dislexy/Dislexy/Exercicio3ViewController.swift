@@ -92,6 +92,7 @@ class Exercicio3ViewController: UIViewController {
     @IBAction func info(sender: AnyObject) {
         instruction()
     }
+    
     func shoeLevelMenu(){
         
         var sucessTitle = "Escolha o level:"
