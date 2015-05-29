@@ -207,6 +207,7 @@ class Exercicio1TableViewController: UITableViewController, UITextFieldDelegate 
     
     
     func instruction(){
+        
         var subtitle = ""
         var tempo = NSTimeInterval.infinity
         
@@ -225,7 +226,7 @@ class Exercicio1TableViewController: UITableViewController, UITextFieldDelegate 
         
         if jogadas == 3 {
             //chama o alerta com os resultados
-            var sucessTitle = "FIM"
+            //var sucessTitle = "FIM"
             var subtitle = String()
             
             switch(acertos){
@@ -246,14 +247,16 @@ class Exercicio1TableViewController: UITableViewController, UITextFieldDelegate 
                 break
             }
             
-            let alert = SCLAlertView()
+            //let alert = SCLAlertView()
             acertos = 0
             jogadas = 0
-            alert.addButton("Jogar Novamente", target: alert, selector: "hideView")
+//            alert.addButton("Jogar Novamente", target: alert, selector: "hideView")
+//            
+//            alert.addButton("Sair", target: alert, selector: "hideView2")
+//            
+//            alert.showSuccess(sucessTitle, subTitle: subtitle)
+            self.showAlerta(subtitle)
             
-            alert.addButton("Sair", target: alert, selector: "hideView2")
-            
-            alert.showSuccess(sucessTitle, subTitle: subtitle)
             
         }else{
             //incrementa jogadas
@@ -262,6 +265,32 @@ class Exercicio1TableViewController: UITableViewController, UITextFieldDelegate 
             letra.text = palav
             limpaCampos()
         }
+    }
+    
+    func showAlerta(sb : String){
+    
+        var sucessTitle = "Fim"
+        var subtitle = sb
+        
+        
+        let alert = SCLAlertView()
+        
+        alert.addButton("Jogar Novamente", action: { () -> Void in
+            self.jogadas = 0
+            self.acertos = 0
+            alert.hideView()
+            self.iniciaJogo()
+            
+        })
+    
+        alert.addButton("Sair", action: { () -> Void in
+            alert.hideView()
+            self.sair()
+        })
+        
+        
+        alert.showSuccess(sucessTitle, subTitle: subtitle)
+    
     }
     
     func alertIsGone() {

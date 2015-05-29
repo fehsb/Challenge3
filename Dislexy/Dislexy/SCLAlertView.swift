@@ -427,35 +427,35 @@ public class SCLAlertView: UIViewController {
     
     // Close SCLAlertView
     public func hideView() {
-        UIView.animateWithDuration(0.15, animations: {
+        UIView.animateWithDuration(0.10, animations: {
             self.view.alpha = 0
             }, completion: { finished in
-                NSNotificationCenter.defaultCenter().postNotificationName("alertWillDisappear", object: nil)
+                //NSNotificationCenter.defaultCenter().postNotificationName("alertWillDisappear", object: nil)
                 
                 self.view.removeFromSuperview()
         })
     }
     
-    public func hideView2() {
-        UIView.animateWithDuration(0.15, animations: {
-            self.view.alpha = 0
-            }, completion: { finished in
-                NSNotificationCenter.defaultCenter().postNotificationName("back", object: nil)
-                
-                self.view.removeFromSuperview()
-        })
-    }
-    
-    public func hideView3() {
-        UIView.animateWithDuration(0.15, animations: {
-            self.view.alpha = 0
-            }, completion: { finished in
-                NSNotificationCenter.defaultCenter().postNotificationName("erro", object: nil)
-                
-                self.view.removeFromSuperview()
-        })
-    }
-    
+//    public func hideView2() {
+//        UIView.animateWithDuration(0.10, animations: {
+//            self.view.alpha = 0
+//            }, completion: { finished in
+//                NSNotificationCenter.defaultCenter().postNotificationName("back", object: nil)
+//                
+//                self.view.removeFromSuperview()
+//        })
+//    }
+//    
+//    public func hideView3() {
+//        UIView.animateWithDuration(0.10, animations: {
+//            self.view.alpha = 0
+//            }, completion: { finished in
+//                NSNotificationCenter.defaultCenter().postNotificationName("erro", object: nil)
+//                
+//                self.view.removeFromSuperview()
+//        })
+//    }
+//    
     
     // Helper function to convert from RGB to UIColor
     func UIColorFromRGB(rgbValue: UInt) -> UIColor {
