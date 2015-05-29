@@ -384,7 +384,7 @@ public class SCLAlertView: UIViewController {
         }else{
             if (style == (.Notice)){
                 
-                addButton(txt, target:self, selector:Selector("hideView3"))
+                addButton(txt, target:self, selector:Selector("hideView"))
                 
             }else{
                 // Done button
