@@ -519,7 +519,7 @@
                         <sections>
                             <tableViewSection id="ZFk-dv-g1o">
                                 <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="239" id="yOa-3y-3tL">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="296" id="yOa-3y-3tL">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yOa-3y-3tL" id="4tM-FG-yny">
                                             <autoresizingMask key="autoresizingMask"/>
@@ -535,9 +535,12 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="esj-FO-TBy">
-                                                    <rect key="frame" x="8" y="51" width="584" height="180"/>
-                                                    <string key="text">Você sabe o que é Dislexia?
-A Dislexia é um transtorno de linguagem que compromete a capacidade de ler, escrever e compreender textos de aproximadamente 4% da população mundial. O dyslexicbuddy foi criado para ajudar crianças com este transtorno a superar suas dificuldades de aprendizado. O App disponibiliza exercícios simples que, com o tempo e prática, melhoram a capacidade de  </string>
+                                                    <rect key="frame" x="8" y="51" width="584" height="245"/>
+                                                    <string key="text">Você sabe o que é Dislexia? 
+
+A Dislexia é um transtorno de linguagem que afeta cerca de 4% da população mundial. Ela compromete a capacidade de ler, escrever e compreender textos. 
+
+O dyslexicbuddy foi criado para ajudar crianças com este transtorno a superar suas dificuldades de aprendizado. O App disponibiliza exercícios simples que, com o tempo e prática, melhoram a capacidade de  </string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
@@ -548,12 +551,12 @@ A Dislexia é um transtorno de linguagem que compromete a capacidade de ler, esc
                                                 <constraint firstItem="CCg-Ck-7pS" firstAttribute="leading" secondItem="4tM-FG-yny" secondAttribute="leadingMargin" id="Kab-EY-NbY"/>
                                                 <constraint firstItem="esj-FO-TBy" firstAttribute="leading" secondItem="4tM-FG-yny" secondAttribute="leadingMargin" id="YAB-l5-lHj"/>
                                                 <constraint firstItem="CCg-Ck-7pS" firstAttribute="top" secondItem="4tM-FG-yny" secondAttribute="topMargin" constant="9" id="b1j-GI-hBW"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="esj-FO-TBy" secondAttribute="bottom" id="mhb-Hz-VEa"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="esj-FO-TBy" secondAttribute="bottom" constant="-8" id="mhb-Hz-VEa"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="800" id="VHm-C8-wpX">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="361" id="VHm-C8-wpX">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VHm-C8-wpX" id="xvY-jW-0ao">
@@ -570,10 +573,10 @@ A Dislexia é um transtorno de linguagem que compromete a capacidade de ler, esc
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fernando" translatesAutoresizingMaskIntoConstraints="NO" id="12p-Hr-nMj" customClass="RFImageView" customModule="Dislexy" customModuleProvider="target">
-                                                    <rect key="frame" x="160" y="90" width="100" height="100"/>
+                                                    <rect key="frame" x="160" y="102" width="100" height="100"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="100" id="00g-Ct-usx"/>
-                                                        <constraint firstAttribute="width" constant="100" id="SFv-ha-pfH"/>
+                                                        <constraint firstAttribute="width" constant="100" id="Zy0-CX-tpi"/>
+                                                        <constraint firstAttribute="height" constant="100" id="uyG-jV-Z8f"/>
                                                     </constraints>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -589,10 +592,10 @@ A Dislexia é um transtorno de linguagem que compromete a capacidade de ler, esc
                                                     </userDefinedRuntimeAttributes>
                                                 </imageView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rafael" translatesAutoresizingMaskIntoConstraints="NO" id="kcA-Xf-ubZ" customClass="RFImageView" customModule="Dislexy" customModuleProvider="target">
-                                                    <rect key="frame" x="340" y="90" width="100" height="100"/>
+                                                    <rect key="frame" x="340" y="102" width="100" height="100"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="100" id="DLm-JW-GGe"/>
-                                                        <constraint firstAttribute="height" constant="100" id="bnT-Mg-VHp"/>
+                                                        <constraint firstAttribute="width" constant="100" id="49N-PR-mVh"/>
+                                                        <constraint firstAttribute="height" constant="100" id="5ik-Qi-0cr"/>
                                                     </constraints>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -608,17 +611,17 @@ A Dislexia é um transtorno de linguagem que compromete a capacidade de ler, esc
                                                     </userDefinedRuntimeAttributes>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rafael Carvalho" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uxP-V7-Uww">
-                                                    <rect key="frame" x="329" y="199" width="122" height="21"/>
+                                                    <rect key="frame" x="329" y="211" width="122" height="21"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="21" id="Yo8-i1-uHO"/>
-                                                        <constraint firstAttribute="width" constant="122" id="oaE-gh-NTE"/>
+                                                        <constraint firstAttribute="width" constant="122" id="PMl-7x-W3S"/>
+                                                        <constraint firstAttribute="height" constant="21" id="xLu-1G-QVX"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fernando Henrique" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6pf-5H-1P2">
-                                                    <rect key="frame" x="136" y="199" width="148" height="21"/>
+                                                    <rect key="frame" x="136" y="211" width="148" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="148" id="q91-Me-SXp"/>
                                                         <constraint firstAttribute="height" constant="21" id="vGF-24-8Hr"/>
@@ -628,17 +631,17 @@ A Dislexia é um transtorno de linguagem que compromete a capacidade de ler, esc
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Designer)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ATl-IS-jiR">
-                                                    <rect key="frame" x="316" y="212" width="148" height="21"/>
+                                                    <rect key="frame" x="316" y="224" width="148" height="21"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="21" id="D0w-wx-na5"/>
-                                                        <constraint firstAttribute="width" constant="148" id="eD4-aT-A0o"/>
+                                                        <constraint firstAttribute="width" constant="148" id="Ite-ZB-OYz"/>
+                                                        <constraint firstAttribute="height" constant="21" id="eya-HT-q9L"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Programador)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fDx-MM-tsG">
-                                                    <rect key="frame" x="136" y="212" width="148" height="21"/>
+                                                    <rect key="frame" x="136" y="224" width="148" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="Jpt-1q-TPi"/>
                                                         <constraint firstAttribute="width" constant="148" id="lCF-Ps-8q0"/>
@@ -649,27 +652,23 @@ A Dislexia é um transtorno de linguagem que compromete a capacidade de ler, esc
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="kcA-Xf-ubZ" firstAttribute="top" secondItem="qZq-Ls-DrO" secondAttribute="bottom" constant="41" id="3QF-WE-fvT"/>
-                                                <constraint firstItem="uxP-V7-Uww" firstAttribute="leading" secondItem="6pf-5H-1P2" secondAttribute="trailing" constant="45" id="3gg-pT-GgQ"/>
                                                 <constraint firstItem="fDx-MM-tsG" firstAttribute="trailing" secondItem="6pf-5H-1P2" secondAttribute="trailing" id="49B-vq-dmD"/>
-                                                <constraint firstAttribute="centerY" secondItem="12p-Hr-nMj" secondAttribute="centerY" constant="259.75" id="4WL-7v-wnU"/>
-                                                <constraint firstItem="ATl-IS-jiR" firstAttribute="top" secondItem="uxP-V7-Uww" secondAttribute="bottom" constant="-8" id="5Km-SW-I9I"/>
                                                 <constraint firstItem="fDx-MM-tsG" firstAttribute="leading" secondItem="6pf-5H-1P2" secondAttribute="leading" id="5x2-L4-AlY"/>
-                                                <constraint firstItem="fDx-MM-tsG" firstAttribute="top" secondItem="12p-Hr-nMj" secondAttribute="bottom" constant="22" id="6rl-db-xf6"/>
-                                                <constraint firstItem="ATl-IS-jiR" firstAttribute="leading" secondItem="fDx-MM-tsG" secondAttribute="trailing" constant="32" id="A5L-6f-4eG"/>
-                                                <constraint firstAttribute="centerY" secondItem="kcA-Xf-ubZ" secondAttribute="centerY" constant="259.75" id="AOk-hu-DhR"/>
-                                                <constraint firstAttribute="centerX" secondItem="uxP-V7-Uww" secondAttribute="centerX" constant="-90.5" id="HN5-Oc-oCs"/>
+                                                <constraint firstAttribute="centerY" secondItem="kcA-Xf-ubZ" secondAttribute="centerY" constant="28.5" id="6SN-ps-Vhe"/>
+                                                <constraint firstItem="uxP-V7-Uww" firstAttribute="leading" secondItem="6pf-5H-1P2" secondAttribute="trailing" constant="45" id="70M-oo-CWi"/>
+                                                <constraint firstAttribute="centerX" secondItem="12p-Hr-nMj" secondAttribute="centerX" constant="90" id="DMA-Ot-wPx"/>
+                                                <constraint firstItem="kcA-Xf-ubZ" firstAttribute="leading" secondItem="12p-Hr-nMj" secondAttribute="trailing" constant="80" id="I0v-qa-clu"/>
                                                 <constraint firstAttribute="centerX" secondItem="6pf-5H-1P2" secondAttribute="centerX" constant="90" id="Icc-mm-38n"/>
-                                                <constraint firstItem="uxP-V7-Uww" firstAttribute="top" secondItem="kcA-Xf-ubZ" secondAttribute="bottom" constant="9" id="UcZ-oT-Vkt"/>
+                                                <constraint firstItem="12p-Hr-nMj" firstAttribute="top" secondItem="qZq-Ls-DrO" secondAttribute="bottom" constant="53" id="KZc-qM-UsW"/>
+                                                <constraint firstItem="kcA-Xf-ubZ" firstAttribute="top" secondItem="qZq-Ls-DrO" secondAttribute="bottom" constant="53" id="Pfg-H7-2pQ"/>
                                                 <constraint firstItem="qZq-Ls-DrO" firstAttribute="top" secondItem="xvY-jW-0ao" secondAttribute="topMargin" constant="20" id="Vib-dh-v2D"/>
-                                                <constraint firstAttribute="centerX" secondItem="kcA-Xf-ubZ" secondAttribute="centerX" constant="-90" id="a3f-Rc-L8N"/>
-                                                <constraint firstItem="12p-Hr-nMj" firstAttribute="top" secondItem="qZq-Ls-DrO" secondAttribute="bottom" constant="41" id="azi-dA-EX4"/>
-                                                <constraint firstItem="kcA-Xf-ubZ" firstAttribute="leading" secondItem="12p-Hr-nMj" secondAttribute="trailing" constant="80" id="bmr-Fh-bqK"/>
+                                                <constraint firstItem="ATl-IS-jiR" firstAttribute="leading" secondItem="fDx-MM-tsG" secondAttribute="trailing" constant="32" id="WIr-Mu-Ahy"/>
+                                                <constraint firstItem="ATl-IS-jiR" firstAttribute="top" secondItem="uxP-V7-Uww" secondAttribute="bottom" constant="-8" id="YyM-Mg-O5x"/>
+                                                <constraint firstAttribute="centerY" secondItem="12p-Hr-nMj" secondAttribute="centerY" constant="28.5" id="bi3-AX-r0i"/>
                                                 <constraint firstItem="qZq-Ls-DrO" firstAttribute="leading" secondItem="xvY-jW-0ao" secondAttribute="leadingMargin" id="cDR-t6-Qr5"/>
-                                                <constraint firstAttribute="centerY" secondItem="6pf-5H-1P2" secondAttribute="centerY" constant="190.5" id="o0R-E5-gdM"/>
-                                                <constraint firstAttribute="centerX" secondItem="12p-Hr-nMj" secondAttribute="centerX" constant="90" id="qIz-Jc-SVZ"/>
-                                                <constraint firstItem="6pf-5H-1P2" firstAttribute="top" secondItem="12p-Hr-nMj" secondAttribute="bottom" constant="9" id="tVm-oh-xkG"/>
-                                                <constraint firstAttribute="centerY" secondItem="uxP-V7-Uww" secondAttribute="centerY" constant="190.5" id="x3i-9Y-Gsp"/>
+                                                <constraint firstItem="uxP-V7-Uww" firstAttribute="top" secondItem="kcA-Xf-ubZ" secondAttribute="bottom" constant="9" id="huO-Zw-g7e"/>
+                                                <constraint firstAttribute="centerX" secondItem="kcA-Xf-ubZ" secondAttribute="centerX" constant="-90" id="kJV-Z9-66d"/>
+                                                <constraint firstAttribute="centerY" secondItem="6pf-5H-1P2" secondAttribute="centerY" constant="-41" id="o0R-E5-gdM"/>
                                                 <constraint firstItem="fDx-MM-tsG" firstAttribute="top" secondItem="6pf-5H-1P2" secondAttribute="bottom" constant="-8" id="yVx-hJ-vjy"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -694,7 +693,7 @@ A Dislexia é um transtorno de linguagem que compromete a capacidade de ler, esc
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="99o-ao-RAz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2219" y="-126.99999999999999"/>
+            <point key="canvasLocation" x="2219" y="-127"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="0aq-bG-6Q6">
