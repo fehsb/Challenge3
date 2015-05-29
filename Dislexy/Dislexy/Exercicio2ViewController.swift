@@ -72,21 +72,13 @@ class Exercicio2ViewController: UIViewController {
         if (cont == certo.count){
             cont = 0
             //Exibir alerta
-            var sucessTitle = "FIM"
             var subtitle = String()
             
             subtitle = "Você obteve \(acertos)/6 acertos"
             
-            let alert = SCLAlertView()
-            
             self.acertos = 0
-
-            alert.addButton("Tentar novamente", target: alert, selector: "hideView")
             
-            alert.addButton("Sair", target: alert, selector: "hideView2")
-            
-            alert.showSuccess(sucessTitle, subTitle: subtitle)
-            
+            self.showAlerta(subtitle)
 
         }else{
         
@@ -109,6 +101,33 @@ class Exercicio2ViewController: UIViewController {
 
         }
     }
+    
+    func showAlerta(sb : String){
+        
+        var sucessTitle = "FIM"
+        var subtitle = sb
+        
+        
+        let alert = SCLAlertView()
+        
+        alert.addButton("Tentar Novamente", action: { () -> Void in
+            self.acertos = 0
+            alert.hideView()
+            self.rodaJogo()
+            
+        })
+        
+        alert.addButton("Sair", action: { () -> Void in
+            alert.hideView()
+            self.sair()
+        })
+        
+        
+        alert.showSuccess(sucessTitle, subTitle: subtitle)
+        
+    }
+    
+
     
     @IBAction func info(sender: AnyObject) {
         instruction()
